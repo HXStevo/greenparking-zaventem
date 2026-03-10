@@ -1,11 +1,11 @@
-local_backend: true
-
 locale: "en"
 
 backend:
   name: github
   repo: HXStevo/greenparking-zaventem
   branch: main
+  base_url: https://test.greenparkingzaventem.be
+  auth_endpoint: api/auth
 
 media_folder: "images"
 public_folder: "images"
