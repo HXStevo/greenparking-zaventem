@@ -1,6 +1,36 @@
 // GreenParking Zaventem - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Orion Tracking initialization
+    if (window.orion) {
+        var pagePath = window.location.pathname.replace(/^\//, '').replace(/\.html$/, '') || 'index';
+        var pageTitle = document.title.split('|')[0].trim();
+        var pageTypes = {
+            'index': 'homepage',
+            'parking-zaventem': 'service',
+            'tarieven': 'rates',
+            'shuttle-service': 'service',
+            'locaties': 'locations',
+            'faq': 'faq',
+            'contact': 'contact',
+            'klantenservice': 'support',
+            'over-greenparking-zaventem': 'about',
+            'reserveren': 'booking'
+        };
+        orion.init({
+            env: 'production',
+            service: 'greenparking-zaventem',
+            organisation: 'greenparking'
+        });
+        orion.setContext({
+            contentId: pagePath,
+            pageType: pageTypes[pagePath] || 'page',
+            title: pageTitle,
+            categories: ['parking', 'zaventem', 'airport'],
+            keywords: ['parkeren', 'zaventem', 'luchthaven', 'shuttle', 'brussel']
+        });
+    }
+
     // Mobile menu toggle
     const hamburger = document.querySelector('.hamburger');
     const mobileMenu = document.querySelector('.mobile-menu');
