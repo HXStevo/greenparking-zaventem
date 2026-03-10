@@ -1,0 +1,49 @@
+site_name: "GreenParking Zaventem"
+logo: "images/logo.svg"
+phone: "+32 2 400 39 03"
+phone_link: "+3224003903"
+email: "info@greenparking.eu"
+
+usp_bar:
+  - "Sécurisé 24h/24 7j/7"
+  - "Navettes gratuites 24h/24"
+  - "Gardez vos clés de voiture"
+  - "240.000 voyageurs nous ont fait confiance"
+
+bottom_usp:
+  - "240.000 voyageurs nous ont fait confiance"
+  - "Navettes gratuites 24h/24"
+  - "Gardien de parking 24h/24"
+  - "Gardez vos clés de voiture"
+
+secondary_nav:
+  - label: "À propos de GreenParking"
+    url: "fr/a-propos-de-greenparking-zaventem.html"
+  - label: "Service client"
+    url: "fr/service-client.html"
+  - label: "FAQ"
+    url: "fr/foire-aux-questions.html"
+  - label: "Contact"
+    url: "fr/contact.html"
+
+main_nav:
+  - label: "Parking Zaventem"
+    url: "fr/parking-zaventem.html"
+  - label: "Tarifs"
+    url: "fr/tarifs.html"
+  - label: "Service de navette"
+    url: "fr/service-de-navette.html"
+  - label: "Lieux"
+    url: "fr/lieux.html"
+
+footer_links:
+  - label: "Conditions Générales"
+    url: "#"
+  - label: "Privacy"
+    url: "#"
+  - label: "Webdesign"
+    url: "#"
+
+agents:
+  default: "WT894"
+  search: "SRCH1"

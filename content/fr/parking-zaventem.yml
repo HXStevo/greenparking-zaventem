@@ -1,0 +1,53 @@
+title: "Stationnement abordable à Zaventem | GreenParking Zaventem"
+meta_description: "Voulez-vous un parking pas cher, de longue ou courte durée pour votre voyage depuis Zaventem?"
+
+hero:
+  heading: "Parking <em>économique</em> Aéroport de Zaventem"
+  text: "Chez GreenParking, vous pouvez garer votre voiture en toute sécurité et à prix avantageux. La navette gratuite vous emmène ensuite à l'aéroport en environ 15 minutes. Que vous souhaitiez stationner pour une courte ou longue durée, vous êtes à la bonne adresse chez nous. Réservez votre place de parking et profitez d'un début de voyage sans soucis."
+  image: "images/illustration.png"
+  image_alt: "Stationnement à Zaventem"
+
+booking:
+  heading: "Vérifiez votre prix et réservez"
+
+shuttle:
+  heading: "Service de navette <em>parking</em>"
+  image: "images/shuttle-bus.jpg"
+  image_alt: "Service de navette"
+  paragraphs:
+    - "Vous êtes garé sur notre terrain sécurisé ? Prenez alors la navette gratuite en direction de l'aéroport. La navette circule régulièrement avec de courts temps d'attente. Nous vous conseillons d'être présent sur le parking 2h30 avant les vols européens et 3h30 avant les vols intercontinentaux."
+    - "Nos parkings sont sécurisés par des caméras de surveillance. Pour accéder au parking, scannez le code-barres de votre bon pour que les barrières s'ouvrent."
+
+how_it_works:
+  heading: "Comment fonctionne"
+  heading_emphasis: "le stationnement chez GreenParking Zaventem"
+  cards:
+    - image: "images/parking-lot.jpg"
+      alt: "Réservation en ligne"
+      text: "Réservation en ligne en 1 minute"
+    - image: "images/barrier-gates.jpg"
+      alt: "Terrain sécurisé"
+      text: "Garez-vous sur notre terrain sécurisé près de l'aéroport"
+    - image: "images/security-camera.jpg"
+      alt: "Vidéosurveillance"
+      text: "Parkings surveillés par caméras"
+    - image: "images/shuttle-bus.jpg"
+      alt: "Navette gratuite"
+      text: "Service de navette gratuit 24h/24 7j/7"
+
+benefits:
+  heading: "Avantages du stationnement chez <em>GreenParking</em>"
+  image: "images/traveler.jpg"
+  items:
+    - "Tarifs avantageux"
+    - "Service de navette gratuit"
+    - "Parkings bien éclairés"
+    - "Vidéosurveillance 24h/24 7j/7"
+    - "Service client disponible 24h/24 7j/7"
+
+location:
+  heading: "Localisation : <em>Vilvoordelaan</em>"
+  image: "images/parking-lot-full.jpg"
+  paragraphs:
+    - "Nos parkings sont situés sur la Vilvoordelaan, à environ 15 minutes du hall de départ. Réglez votre GPS sur Vilvoordelaan et suivez les panneaux vers GreenParking."
+    - "Après votre réservation, vous recevrez un bon avec l'adresse exacte et l'itinéraire par e-mail."

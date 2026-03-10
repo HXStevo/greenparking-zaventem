@@ -1,0 +1,59 @@
+title: "Parking économique à long terme | GreenParking Zaventem"
+meta_description: "Voulez-vous un parking à long durée pas cher à Zaventem? GreenParking Zaventem à la solution! ✓ Disponible 24/7 ✓ Parking sécurisé"
+
+hero:
+  heading: "Parking économique à long terme à <em>Zaventem</em>"
+  paragraphs:
+    - "Voulez-vous un parking à long durée pas cher à Zaventem? GreenParking Zaventem a la solution! Nos parkings sécurisés se trouvent à seulement 15 minutes de l'aéroport. La navette gratuite vous emmène rapidement et confortablement au hall de départ, pour que vous puissiez voyager l'esprit tranquille."
+    - "Que vous partiez pour une semaine, deux semaines ou plus, chez GreenParking Zaventem vous vous garez toujours à un tarif avantageux. Réservez facilement en ligne et profitez de nos tarifs compétitifs."
+  image: "images/illustration.png"
+  image_alt: "Parking économique à long terme Zaventem"
+
+benefits:
+  heading: "Les avantages du <em>parking longue durée</em>"
+  cards:
+    - title: "Direct au hall de départ"
+      text: "Avec notre navette gratuite, vous êtes au hall de départ de Zaventem Airport en environ 15 minutes. Plus besoin de transports en commun ou de taxis coûteux."
+      icon: "location"
+    - title: "Gagnez du temps"
+      text: "Rendez-vous directement à notre parking et montez dans la navette. Pas de longues marches ni de temps d'attente. Nous recommandons d'arriver 2h30 avant les vols européens."
+      icon: "clock"
+    - title: "Disponible 24h/24 7j/7"
+      text: "Notre parking et notre service client sont disponibles 24 heures sur 24, 7 jours sur 7. Vol matinal ou atterrissage tardif? Aucun problème!"
+      icon: "phone"
+
+booking:
+  heading: "Réservez directement votre place de parking!"
+
+parkings:
+  heading: "Garez-vous sur l'un de nos <em>parkings</em>"
+  image: "images/parking-lot-full.jpg"
+  image_alt: "Parking GreenParking Zaventem"
+  paragraphs:
+    - "GreenParking Zaventem dispose de vastes parkings à la Vilvoordelaan. Les terrains sont sécurisés 24h/24 avec des caméras et bien éclairés. Vous gardez vos clés de voiture, de sorte que personne d'autre ne puisse accéder à votre véhicule."
+    - "Après votre réservation, vous recevez un voucher avec un code-barres par e-mail. À votre arrivée, scannez le code-barres à la barrière et garez votre voiture sur l'une des places spacieuses. Simple et rapide."
+
+gemak:
+  heading: "La commodité de <em>GreenParking</em> Zaventem"
+  image: "images/shuttle-bus.jpg"
+  image_alt: "Navette GreenParking Zaventem"
+  paragraphs:
+    - "La navette gratuite circule en continu entre notre parking et l'aéroport. Le trajet dure environ 15 minutes. Nous recommandons d'être présent sur le parking 2h30 avant les vols européens et 3h30 avant les vols intercontinentaux."
+    - "Au retour, prenez la navette depuis l'aéroport jusqu'au parking. Scannez votre code-barres à la barrière et rentrez chez vous. Votre voiture se trouve exactement là où vous l'avez laissée."
+
+security:
+  heading: "Sécurisé et <em>fiable</em>"
+  image: "images/security-camera.jpg"
+  image_alt: "Caméra de sécurité parking"
+  items:
+    - "Surveillance par caméras 24h/24 sur l'ensemble du terrain"
+    - "Places de parking bien éclairées"
+    - "Barrières avec accès par code-barres"
+    - "Vous gardez vos clés de voiture"
+    - "Plus de 240.000 voyageurs satisfaits"
+
+cta:
+  heading: "GreenParking Zaventem offre la solution pour se garer à long terme à <em>Zaventem</em>"
+  text: "Consultez la disponibilité et les tarifs en ligne et réservez directement votre place de parking. Vous avez des questions? Contactez notre service client au 02/4003903 ou envoyez un e-mail à info@greenparking.com."
+  image: "images/traveler.jpg"
+  image_alt: "Voyageur à l'aéroport"

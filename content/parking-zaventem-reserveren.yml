@@ -1,0 +1,46 @@
+title: "Parking Zaventem reserveren | GreenParking Zaventem"
+meta_description: "Wil je graag parkeren bij Zaventem? Dit kan bij GreenParking Zaventem! Je betaalt natuurlijk niet te veel en zo kun je je geld beter op je vakantie bestenden."
+og_title: "Parking Zaventem reserveren | GreenParking Zaventem"
+og_description: "Reserveer je parking bij Zaventem via GreenParking. Voordelig, veilig en met gratis shuttlebus."
+
+hero:
+  heading: "<em>Parking Zaventem</em> reserveren"
+  text: "Wil je graag parkeren bij Zaventem? Dit kan bij GreenParking Zaventem! Parkeer je auto op ons beveiligde terrein en neem de gratis shuttlebus naar de terminal. Je betaalt natuurlijk niet te veel en zo kun je je geld beter op je vakantie bestenden. Reserveer snel en gemakkelijk je parkeerplek."
+  image: images/parking-lot.jpg
+  image_alt: Parking Zaventem reserveren
+
+booking:
+  heading: "Check online beschikbaarheid en tarieven"
+
+benefits:
+  heading: "Binnen 1 minuut <em>online reserveren</em>"
+  cards:
+    - icon: terminal
+      title: Direct naar de vertrekhal
+      text: "Onze gratis shuttlebus brengt je rechtstreeks van de parking naar de vertrekhal van Brussel Zaventem Airport. Zo hoef je niet te zoeken en ben je snel op je bestemming."
+      image: images/shuttle-bus.jpg
+      image_alt: Shuttlebus naar vertrekhal
+    - icon: clock
+      title: Bespaar extra reistijd
+      text: "Door vooraf te reserveren bespaar je kostbare tijd. Je parkeerplek staat al voor je klaar en je hoeft niet rond te rijden op zoek naar een vrije plek."
+      image: images/parking-lot-full.jpg
+      image_alt: Parkeerterrein GreenParking
+    - icon: phone
+      title: 24/7 bereikbaar
+      text: "Onze klantenservice is dag en nacht bereikbaar. Heb je vragen over je reservering of heb je hulp nodig? Wij staan altijd voor je klaar."
+      image: images/security-camera.jpg
+      image_alt: 24/7 bereikbaar en beveiligd
+
+content:
+  heading: "Parkeren en shuttle naar de <em>terminal</em>"
+  image: images/traveler.jpg
+  image_alt: Reiziger bij luchthaven
+  paragraphs:
+    - "Bij GreenParking Zaventem kun je eenvoudig en voordelig je auto parkeren. Na het parkeren neem je de gratis shuttlebus die je rechtstreeks naar de terminal van Brussel Zaventem Airport brengt. De shuttlebus rijdt 24/7 en de rit duurt slechts ongeveer 15 minuten."
+    - "Je reservering is binnen 1 minuut geregeld. Na je boeking ontvang je direct een bevestiging met je voucher per e-mail. Op de voucher staat een barcode waarmee je de slagbomen van de parking kunt openen. Zo simpel is het!"
+
+cta:
+  heading: "Reserveer direct je parkeerplek!"
+  text: "Wacht niet langer en reserveer vandaag nog je parkeerplek bij GreenParking Zaventem. Bekijk de beschikbaarheid, bereken je tarief en boek binnen 1 minuut."
+  button_text: "Bereken parkeertarief"
+  button_url: "reserveren.html"

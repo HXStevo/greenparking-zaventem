@@ -1,0 +1,20 @@
+<form class="booking-form">
+    <div class="booking-group">
+        <label>Vertrekdatum</label>
+        <input type="date" name="departure-date" class="date-input" required>
+    </div>
+    <div class="booking-group">
+        <label>Tijd (ongeveer)</label>
+        <select name="departure-time" class="time-select"><option value="">Selecteer</option></select>
+    </div>
+    <span class="booking-separator">-</span>
+    <div class="booking-group">
+        <label>Aankomstdatum</label>
+        <input type="date" name="arrival-date" class="date-input" required>
+    </div>
+    <div class="booking-group">
+        <label>Tijd (ongeveer)</label>
+        <select name="arrival-time" class="time-select"><option value="">Selecteer</option></select>
+    </div>
+    <button type="submit" class="btn-cta-outline">Bereken mijn prijs</button>
+</form>

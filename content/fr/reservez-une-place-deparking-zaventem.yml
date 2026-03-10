@@ -1,0 +1,46 @@
+title: "Réservez une place de parking à Zaventem | GreenParking Zaventem"
+meta_description: "Voulez-vous vous garer à Zaventem? C'est possible chez GreenParking Zaventem! Vous ne payez pas trop et vous pouvez mieux dépenser votre argent en vacances."
+og_title: "Réservez une place de parking à Zaventem | GreenParking Zaventem"
+og_description: "Réservez votre parking à Zaventem via GreenParking. Avantageux, sûr et avec navette gratuite."
+
+hero:
+  heading: "Réservez une place de parking à <em>Zaventem</em>"
+  text: "Voulez-vous vous garer à Zaventem? C'est possible chez GreenParking Zaventem! Garez votre voiture sur notre terrain sécurisé et prenez la navette gratuite vers le terminal. Vous ne payez pas trop et vous pouvez mieux dépenser votre argent en vacances. Réservez rapidement et facilement votre place de parking."
+  image: "images/parking-lot.jpg"
+  image_alt: "Réserver parking Zaventem"
+
+booking:
+  heading: "Consultez la disponibilité et les tarifs en ligne"
+
+benefits:
+  heading: "Réservez en ligne en <em>1 minute</em>"
+  cards:
+    - icon: "terminal"
+      title: "Direct au hall de départ"
+      text: "Notre navette gratuite vous emmène directement du parking au hall de départ de Brussels Zaventem Airport. Plus besoin de chercher, vous arrivez rapidement à destination."
+      image: "images/shuttle-bus.jpg"
+      image_alt: "Navette vers le hall de départ"
+    - icon: "clock"
+      title: "Gagnez du temps"
+      text: "En réservant à l'avance, vous gagnez un temps précieux. Votre place de parking est déjà prête et vous n'avez pas à tourner pour trouver une place libre."
+      image: "images/parking-lot-full.jpg"
+      image_alt: "Parking GreenParking"
+    - icon: "phone"
+      title: "Disponible 24h/24 7j/7"
+      text: "Notre service client est joignable jour et nuit. Vous avez des questions sur votre réservation ou besoin d'aide? Nous sommes toujours à votre disposition."
+      image: "images/security-camera.jpg"
+      image_alt: "Disponible 24h/24 et sécurisé"
+
+content:
+  heading: "Parking et navette vers le <em>terminal</em>"
+  image: "images/traveler.jpg"
+  image_alt: "Voyageur à l'aéroport"
+  paragraphs:
+    - "Chez GreenParking Zaventem, vous pouvez facilement et avantageusement garer votre voiture. Après le stationnement, prenez la navette gratuite qui vous emmène directement au terminal de Brussels Zaventem Airport. La navette circule 24h/24 et le trajet dure seulement environ 15 minutes."
+    - "Votre réservation est réglée en 1 minute. Après votre réservation, vous recevez immédiatement une confirmation avec votre voucher par e-mail. Le voucher contient un code-barres qui vous permet d'ouvrir les barrières du parking. C'est aussi simple que cela!"
+
+cta:
+  heading: "Réservez directement votre place de parking!"
+  text: "N'attendez plus et réservez dès aujourd'hui votre place de parking chez GreenParking Zaventem. Consultez la disponibilité, calculez votre tarif et réservez en 1 minute."
+  button_text: "Calculez le tarif de parking"
+  button_url: "fr/reservez-une-place-deparking-zaventem.html"

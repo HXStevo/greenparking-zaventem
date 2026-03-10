@@ -1,0 +1,18 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo"><a href="index.html"><img src="{{ globals.logo }}" alt="{{ globals.site_name }}"></a></div>
+        <div class="footer-middle">
+            <select class="footer-select airport-select">
+                <option value="zaventem">Zaventem (BRU)</option>
+                <option value="schiphol">Schiphol (AMS)</option>
+            </select>
+            <span class="footer-subtitle">Ga naar een andere luchthaven</span>
+        </div>
+        <div class="footer-links">
+            {% for item in globals.footer_links %}
+            <a href="{{ item.url }}">{{ item.label }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</footer>
+<button class="scroll-top" aria-label="Scroll naar boven"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg></button>

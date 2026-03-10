@@ -1,0 +1,31 @@
+title: "Contact | GreenParking Zaventem"
+meta_description: "Neem contact op met GreenParking Zaventem. 24/7 bereikbaar via telefoon en e-mail."
+
+heading: "Neem contact op"
+intro: "Heb je vragen over parkeren bij GreenParking Zaventem? We helpen je graag!"
+
+contact_cards:
+  - icon: "&#9993;"
+    title: "E-mail"
+    text: "Stuur ons een e-mail en we reageren dezelfde dag"
+    link_text: "info@greenparking.eu"
+    link_url: "mailto:info@greenparking.eu"
+  - icon: "&#9742;"
+    title: "Telefoon"
+    text: "24/7 bereikbaar voor al je vragen"
+    link_text: "+32 2 400 39 03"
+    link_url: "tel:+3224003903"
+  - icon: "&#10067;"
+    title: "Veelgestelde vragen"
+    text: "Bekijk de antwoorden op de meest gestelde vragen"
+    link_text: "Bekijk FAQ &rarr;"
+    link_url: "faq.html"
+
+form:
+  heading: "Stuur ons een bericht"
+  subjects:
+    - "Reservering"
+    - "Wijziging boeking"
+    - "Annulering"
+    - "Shuttle service"
+    - "Overig"

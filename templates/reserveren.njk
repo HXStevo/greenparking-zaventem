@@ -1,0 +1,53 @@
+{% extends "_layout.njk" %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h1 style="font-size: 38px; font-weight: 800; color: var(--color-primary);">{{ page.heading }}</h1>
+                <p style="color: var(--color-text-secondary); margin-top: 10px;">{{ page.intro }}</p>
+            </div>
+
+            <div class="reservation-form">
+                <form class="booking-form">
+                    <div class="booking-row">
+                        <div class="booking-group">
+                            <label>Vertrekdatum</label>
+                            <input type="date" name="departure-date" class="date-input" required>
+                        </div>
+                        <div class="booking-group">
+                            <label>Tijd (ongeveer)</label>
+                            <select name="departure-time" class="time-select"><option value="">Selecteer</option></select>
+                        </div>
+                    </div>
+                    <div class="booking-row">
+                        <div class="booking-group">
+                            <label>Aankomstdatum</label>
+                            <input type="date" name="arrival-date" class="date-input" required>
+                        </div>
+                        <div class="booking-group">
+                            <label>Tijd (ongeveer)</label>
+                            <select name="arrival-time" class="time-select"><option value="">Selecteer</option></select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-cta" style="width: 100%; justify-content: center; padding: 16px;">Bereken mijn prijs &rarr;</button>
+                </form>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <div class="two-col">
+                    <div class="benefits-list">
+                        {% for item in page.benefits.items_left %}
+                        <div class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>{{ item }}</div>
+                        {% endfor %}
+                    </div>
+                    <div class="benefits-list">
+                        {% for item in page.benefits.items_right %}
+                        <div class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>{{ item }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

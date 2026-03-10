@@ -1,0 +1,58 @@
+{% extends "_layout.njk" %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-content">
+                    <h1 style="font-size: 38px; font-weight: 800; color: var(--color-primary); line-height: 1.2;">{{ page.hero.heading | safe }}</h1>
+                    {% for p in page.hero.paragraphs %}
+                    <p {% if loop.first %}style="margin-top: 20px;"{% endif %}>{{ p }}</p>
+                    {% endfor %}
+                </div>
+                <div>
+                    <img src="{{ page.hero.image }}" alt="{{ page.hero.image_alt }}" style="border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 style="margin-bottom: 20px;">{{ page.map.heading }}</h2>
+            <p style="margin-bottom: 20px; color: var(--color-text-secondary);">{{ page.map.address | safe }}</p>
+            <div class="map-container">
+                <iframe src="{{ page.map.embed_url }}" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section">
+        <div class="container">
+            <h2 style="margin-bottom: 30px;">{{ page.benefits.heading }}</h2>
+            <div class="two-col">
+                <div class="benefits-list">
+                    {% for item in page.benefits.items_left %}
+                    <div class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>{{ item }}</div>
+                    {% endfor %}
+                </div>
+                <div class="benefits-list">
+                    {% for item in page.benefits.items_right %}
+                    <div class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>{{ item }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="cta-section">
+                <h3>{{ page.cta.heading }}</h3>
+                <a href="reserveren.html" class="btn-cta">Reserveer mijn plek &rarr;</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

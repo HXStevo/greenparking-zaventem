@@ -1,0 +1,41 @@
+title: "Voordelig Kort Parkeren Zaventem | GreenParking Zaventem"
+meta_description: "Onze parkings worden 24/7 bewaakt en zijn alleen toegankelijk met een geldige vouchercode. Reserveer binnen 1 minuut via GreenParking Zaventem."
+
+hero:
+  heading: "Kort parkeren <em>Zaventem</em>"
+  paragraphs:
+    - "Moet je slechts een paar dagen parkeren bij Brussel Zaventem Airport? Bij GreenParking Zaventem kun je ook voor korte periodes voordelig en veilig parkeren. Onze parkings worden 24/7 bewaakt en zijn alleen toegankelijk met een geldige vouchercode."
+    - "Reserveer binnen 1 minuut online en ontvang direct je voucher met barcode. Bij aankomst scan je de barcode, parkeer je auto en neem de gratis shuttlebus naar de terminal. Zo simpel is het!"
+  image: "images/illustration.png"
+  image_alt: "Kort parkeren bij Zaventem"
+
+booking:
+  heading: "Bereken je tarief voor kort parkeren"
+
+benefits:
+  heading: "Voordelen van kort parkeren bij <em>GreenParking</em>"
+  image: "images/traveler.jpg"
+  items:
+    - "Reserveer binnen 1 minuut online"
+    - "Je neemt zelf je autosleutels mee"
+    - "Gratis shuttlebus in ~15 minuten naar de terminal"
+    - "24/7 beschikbaar, ook voor korte periodes"
+    - "24/7 beveiligd met camerabewaking"
+    - "Geen verborgen kosten na het boeken"
+    - "Voordelige tarieven, ook voor kort parkeren"
+
+features:
+  heading: "Hoe werkt kort parkeren bij <em>GreenParking Zaventem</em>?"
+  image: "images/security-camera.jpg"
+  image_alt: "Beveiligd parkeerterrein GreenParking"
+  paragraphs:
+    - "Na je online reservering ontvang je een voucher met een persoonlijke barcode. Bij aankomst op het parkeerterrein scan je deze barcode waardoor de slagbomen automatisch open gaan. Je kunt de voucher ook op je mobiel opslaan en scannen."
+    - "Parkeer je auto op een van de ruime plekken en neem de gratis shuttlebus richting de luchthaven. De rit duurt ongeveer 15 minuten. Op de terugweg neem je de shuttle terug naar de parking en rij je zo naar huis."
+
+locations:
+  heading: "Onze locaties nabij <em>Zaventem Airport</em>"
+  image: "images/parking-lot-full.jpg"
+  image_alt: "Parkeerterrein GreenParking Zaventem"
+  paragraphs:
+    - "GreenParking Zaventem heeft twee parkeerterreinen: aan de Budasteenweg en aan de Vilvoordelaan. Beide locaties zijn 24/7 geopend en beveiligd met camera's. De gratis shuttlebus brengt je snel naar de terminal."
+    - "Na je boeking ontvang je een voucher met het exacte adres en routebeschrijving per e-mail. Stel je navigatie in en volg de borden naar GreenParking."

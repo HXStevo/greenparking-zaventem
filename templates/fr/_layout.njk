@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.meta_description }}">
+    {% if page.og_title %}
+    <meta property="og:title" content="{{ page.og_title }}">
+    <meta property="og:description" content="{{ page.og_description }}">
+    <meta property="og:type" content="website">
+    {% endif %}
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="{{ globals.logo }}">
+
+    <!-- Orion Tracking by Spiny -->
+    <script>
+        window.orion = window.orion || {queue: []};
+        ['init', 'registerElement', 'setConfig', 'setContext', 'newPageView', 'on'].forEach(function(fn) {
+            window.orion[fn] = function() {
+                window.orion.queue.push({fn: fn, args: arguments});
+            }
+        });
+    </script>
+    <script async src="https://dbq5t2jl0vcpj.cloudfront.net/hx-tracker/tracker-v5-latest.min.js"></script>
+</head>
+<body>
+    {% include "_partials/header.njk" %}
+
+    {% include "_partials/usp-bar.njk" %}
+
+    {% block content %}{% endblock %}
+
+    {% include "_partials/bottom-usp.njk" %}
+    {% include "_partials/footer.njk" %}
+    <script>
+        window.AGENT_CONFIG = {
+            defaultAgent: "{{ globals.agents.default }}",
+            searchAgent: "{{ globals.agents.search }}"
+        };
+    </script>
+    <script src="js/agents.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

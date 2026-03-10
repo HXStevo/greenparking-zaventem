@@ -1,0 +1,38 @@
+title: "Stationnement à long duréé à Zaventem | GreenParking Zaventem"
+meta_description: "Nos sites de stationnement sont surveillées 24 heures sur 24 et ne sont accessibles qu'avec le bon code de voucher. Réservez en 1 minute via GreenParking Zaventem."
+
+hero:
+  heading: "Parking à long terme <em>Zaventem</em>"
+  text: "Vous partez en vacances ou en voyage d'affaires et souhaitez laisser votre voiture en toute sécurité? Chez GreenParking Zaventem, vous pouvez vous garer à long terme à un tarif avantageux près de Brussels Airport. Nos parkings sont sécurisés 24h/24 et la navette gratuite vous emmène en environ 15 minutes au hall de départ. Réservez rapidement et facilement en ligne."
+  image: "images/illustration.png"
+  image_alt: "Parking à long terme Zaventem Airport"
+
+booking:
+  heading: "Consultez votre tarif et réservez"
+
+security:
+  heading: "La sécurité avant tout avec le <em>parking longue durée</em>"
+  image: "images/security-camera.jpg"
+  image_alt: "Parking sécurisé"
+  paragraphs:
+    - "Nos parkings sont surveillés 24h/24 par des caméras de surveillance et ne sont accessibles qu'avec le bon code de voucher. Vous pouvez être sûr que votre voiture est en sécurité pendant votre voyage."
+    - "À votre retour, votre voiture se trouve exactement là où vous l'avez laissée. Prenez la navette gratuite pour retourner au parking et rentrez chez vous l'esprit tranquille."
+
+benefits:
+  heading: "Avantages du <em>parking longue durée</em> chez GreenParking"
+  image: "images/traveler.jpg"
+  items:
+    - "Tarifs avantageux, aussi pour les longues durées"
+    - "Réservation rapide et simple en ligne en 1 minute"
+    - "Vous gardez vos propres clés de voiture"
+    - "Navette gratuite vers l'aéroport (environ 15 minutes)"
+    - "Parkings sécurisés 24h/24 avec surveillance par caméras"
+
+location:
+  heading: "Emplacement: <em>Vilvoordelaan</em>"
+  image: "images/parking-lot-full.jpg"
+  paragraphs:
+    - "Nos parkings sont situés à la Vilvoordelaan, à seulement 15 minutes de Brussels Airport. Réglez votre GPS sur Vilvoordelaan et suivez les panneaux vers GreenParking."
+    - "Après votre réservation, vous recevez une confirmation avec l'adresse exacte et un itinéraire clair par e-mail."
+  cta_text: "Réservez directement votre place"
+  cta_link: "fr/reservez-une-place-deparking-zaventem.html"

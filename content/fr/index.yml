@@ -1,0 +1,60 @@
+title: "GreenParking Zaventem | GreenParking Zaventem"
+meta_description: "Réservez dès maintenant votre place de parking auprès de Green Parking Zaventem."
+og_title: "GreenParking Zaventem | GreenParking Zaventem"
+og_description: "Stationnement avantageux près de l'aéroport de Bruxelles Zaventem avec navette gratuite."
+
+hero:
+  heading: "Parking à petit prix à l'aéroport de Bruxelles Zaventem"
+  text: "Vous cherchez un bon parking pour garer votre voiture à prix avantageux, situé à seulement 15 minutes de l'aéroport ? Alors vous êtes à la bonne adresse chez GreenParking. Notre parking se trouve à proximité de l'aéroport de Bruxelles Zaventem, vous serez donc rapidement à l'aéroport grâce à notre navette gratuite ! Un autre avantage est que nous sommes souvent 20% moins chers que les prestataires de stationnement autour de l'aéroport de Bruxelles Zaventem. 240.000 voyageurs nous ont déjà fait confiance. Assurez-vous de partir en vacances ou en voyage d'affaires l'esprit tranquille et choisissez la fiabilité et le bon service de GreenParking !"
+  image: "images/parking-lot.jpg"
+
+booking:
+  heading: "Vérifiez votre prix et réservez"
+
+how_it_works:
+  heading: "Comment fonctionne"
+  heading_emphasis: "le stationnement chez GreenParking Zaventem"
+  cards:
+    - image: "images/parking-lot.jpg"
+      alt: "Parking spacieux"
+      text: "Parking spacieux"
+    - image: "images/barrier-gates.jpg"
+      alt: "Barrières avec scanner de codes-barres"
+      text: "Les barrières s'ouvrent après le scan de votre code-barres personnel"
+    - image: "images/shuttle-bus.jpg"
+      alt: "Service de navette gratuit"
+      text: "Service de navette gratuit vers et depuis l'aéroport de Bruxelles Zaventem"
+    - image: "images/security-camera.jpg"
+      alt: "Parking sécurisé 24h/24 7j/7"
+      text: "Parking sécurisé 24h/24 7j/7"
+
+benefits:
+  heading: "Les avantages de GreenParking Zaventem"
+  image: "images/traveler.jpg"
+  items:
+    - "20% moins cher que le stationnement à l'aéroport"
+    - "Places de parking spacieuses"
+    - "Sécurisé 24h/24 avec caméras de surveillance"
+    - "Service client disponible 24h/24 7j/7"
+    - "Navette gratuite vers/depuis le terminal"
+    - "Le trajet en navette dure environ 15 minutes"
+    - "Gardez vos clés de voiture"
+    - "Aucun frais caché après la réservation"
+
+shuttle:
+  heading: "Service de navette 24h/24"
+  image: "images/parking-lot-full.jpg"
+  paragraphs:
+    - "Pour accéder au parking de GreenParking Bruxelles Zaventem Airport, vous pouvez scanner votre code-barres pour que les barrières s'ouvrent. Ce code-barres se trouve sur le bon que vous recevez après votre réservation. Vous pouvez également enregistrer le bon sur votre téléphone et le scanner. Une fois votre voiture bien garée, vous pouvez prendre la navette gratuite vers l'aéroport. Le trajet en navette dure environ 15 minutes. Vous serez donc rapidement au terminal de départ de l'aéroport. Ready for take off !"
+    - "Au retour également, il est facile de prendre la navette en direction du parking. Vous retrouverez ainsi rapidement votre propre voiture."
+    - "Si vous avez des questions, n'hésitez pas à contacter notre service client, disponible 24h/24 7j/7."
+
+pricing:
+  heading: "Combien coûte le stationnement à<br>l'aéroport de Bruxelles Zaventem ?"
+  text: "Vous souhaitez savoir combien vous paierez pour votre parking ? Consultez alors nos tarifs avantageux en recherchant les dates de voyage souhaitées. Le montant du tarif dépend notamment de la saison pour laquelle vous réservez. Il est conseillé de réserver un parking en haute saison le plus tôt possible. Ainsi vous obtenez le tarif le plus avantageux et vous êtes assuré d'une bonne place pour votre voiture. En route pour ces vacances ou ce voyage d'affaires ! Pour éviter toute déception, nous vous conseillons de jeter un coup d'oeil. Calculez le <a href=\"fr/reserver-ma-place.html\" style=\"color: var(--color-orange);\">tarif actuel</a>."
+
+cta:
+  heading: "Parking avantageux près de Bruxelles Zaventem ? Réservez chez GreenParking Zaventem !"
+  paragraphs:
+    - "Vous pensez que le stationnement près de l'aéroport de Bruxelles Zaventem est cher ? Vous serez agréablement surpris en consultant les tarifs avantageux de GreenParking. Une place de parking de qualité ne doit pas être chère ! Réservez rapidement une place sur notre parking près de l'aéroport de Bruxelles Zaventem. Vous aurez ainsi la certitude que votre voiture est en sécurité pendant votre absence."
+    - "Vous voulez en savoir plus sur le stationnement à l'aéroport de Bruxelles Zaventem ? Vous pouvez toujours consulter les <a href=\"fr/foire-aux-questions.html\" style=\"color: var(--color-orange);\">questions fréquentes</a> ou <a href=\"fr/contact.html\" style=\"color: var(--color-orange);\">contacter</a> notre service client. Ils se feront un plaisir de vous aider à trouver une place de parking adaptée près de l'aéroport de Bruxelles Zaventem."

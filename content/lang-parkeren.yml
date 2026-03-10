@@ -1,0 +1,44 @@
+title: Voordelig Lang Parkeren Zaventem | GreenParking Zaventem
+meta_description: Onze parkeerterreinen worden 24/7 bewaakt en zijn bovendien alleen
+  toegankelijk met de juiste vouchercode. Reserveer binnen 1 minuut via GreenParking
+  Zaventem.
+hero:
+  heading: Lang parkeren <em>Zaventem</em>
+  text: Ga je op vakantie of zakenreis en wil je je auto veilig achterlaten? Bij
+    GreenParking Zaventem kun je voordelig lang parkeren nabij Brussels Airport. Onze
+    parkeerterreinen zijn 24/7 beveiligd en de gratis shuttlebus brengt je in
+    ongeveer 15 minuten naar de vertrekhal. Reserveer snel en eenvoudig online.
+  image: images/illustration.png
+  image_alt: Lang parkeren bij Zaventem Airport
+booking:
+  heading: Check je prijs en reserveer
+security:
+  heading: Veiligheid voorop met <em>lang parkeren</em>
+  image: images/security-camera.jpg
+  image_alt: Beveiligde parkeerplaats
+  paragraphs:
+    - Onze parkeerterreinen worden 24/7 bewaakt met camerabewaking en zijn
+      bovendien alleen toegankelijk met de juiste vouchercode. Zo weet je zeker
+      dat je auto veilig staat terwijl je op reis bent.
+    - Bij terugkomst staat je auto precies zoals je hem hebt achtergelaten. Neem
+      de gratis shuttlebus terug naar de parking en rijd zorgeloos naar huis.
+benefits:
+  heading: Voordelen van <em>lang parkeren</em> bij GreenParking
+  image: images/traveler.jpg
+  items:
+    - Voordelige tarieven, ook voor langere periodes
+    - Snel en eenvoudig online reserveren binnen 1 minuut
+    - Je houdt je eigen autosleutels
+    - Gratis shuttlebus naar de luchthaven (ca. 15 minuten)
+    - 24/7 beveiligde parkeerterreinen met camerabewaking
+location:
+  heading: "Locatie: <em>Vilvoordelaan</em>"
+  image: images/parking-lot-full.jpg
+  paragraphs:
+    - Onze parkeerterreinen zijn gelegen aan de Vilvoordelaan, op slechts 15
+      minuten van Brussels Airport. Stel je navigatie in op Vilvoordelaan en
+      volg de borden naar GreenParking.
+    - Na je boeking ontvang je een bevestiging met het exacte adres en een
+      duidelijke routebeschrijving per e-mail.
+  cta_text: Reserveer direct je parkeerplek
+  cta_link: reserveren.html

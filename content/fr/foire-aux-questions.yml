@@ -1,0 +1,67 @@
+title: "Foire aux questions | GreenParking Zaventem"
+meta_description: "Ici vous trouverez toutes les réponses parmi les questions fréquentes concernant le stationnement chez GreenParking Zaventem."
+
+heading: "Foire aux questions"
+
+categories:
+  - title: "Corona"
+    questions:
+      - question: "Quelles mesures GreenParking prend-il contre le coronavirus ?"
+        answer: "La santé de nos clients et de notre personnel est notre priorité. Nos navettes sont régulièrement nettoyées et désinfectées. Nous suivons les directives des autorités sanitaires belges."
+      - question: "Dois-je porter un masque dans la navette ?"
+        answer: "Veuillez suivre les règles en vigueur concernant le port du masque dans les transports en commun. Consultez les directives actuelles sur le site du gouvernement belge."
+      - question: "Puis-je annuler gratuitement en raison du coronavirus ?"
+        answer: "Oui, si votre vol est annulé en raison du coronavirus, vous pouvez annuler gratuitement votre réservation. Contactez notre service client à <a href=\"mailto:info@greenparking.eu\" style=\"color: var(--color-orange);\">info@greenparking.eu</a>."
+      - question: "La navette circule-t-elle toujours pendant la période corona ?"
+        answer: "Oui, notre service de navette fonctionne 24h/24 7j/7, également pendant la période corona. Les horaires peuvent être adaptés en fonction de la demande."
+      - question: "Le parking est-il ouvert pendant le confinement ?"
+        answer: "Oui, nos parkings restent ouverts 24h/24 7j/7, même pendant les périodes de confinement. Le stationnement est considéré comme un service essentiel pour les voyageurs."
+
+  - title: "Réservation"
+    questions:
+      - question: "Comment fonctionne la réservation ?"
+        answer: "La réservation se fait en trois étapes : remplissez vos dates et heures de départ et d'arrivée, complétez vos coordonnées et confirmez la réservation. Le paiement s'effectue ultérieurement en ligne. Vous recevez un lien de paiement 48 heures avant le départ. Pour les réservations effectuées moins de 48 heures avant le départ, le paiement doit être effectué dans les 3 heures, sinon la réservation sera annulée."
+      - question: "Combien coûte le stationnement ?"
+        answer: "Les coûts dépendent de la saison et de la disponibilité. Pour voir le tarif actuel, remplissez vos dates de départ et d'arrivée sur notre site web. Vous verrez immédiatement le prix sans aucune obligation."
+
+  - title: "Parking chez GreenParking"
+    questions:
+      - question: "Qu'est-ce que le service de navette ?"
+        answer: "Une navette gratuite circule 24h/24 7j/7 entre le parking GreenParking et l'aéroport de Bruxelles Zaventem. Vous n'avez pas besoin de remettre vos clés et vous n'avez pas à organiser votre propre transport."
+      - question: "Puis-je me garer sous abri ?"
+        answer: "Non, les parkings ne sont pas couverts mais disposent d'un terrain asphalté, d'un éclairage 24h/24 et d'une vidéosurveillance continue."
+      - question: "Puis-je garer mon camping-car ou véhicule allongé ?"
+        answer: "Les camping-cars et véhicules allongés ne sont pas autorisés. La longueur maximale du véhicule est de 5 mètres et la largeur maximale de 2,40 mètres."
+      - question: "Où puis-je trouver les horaires de la navette ?"
+        answer: "La navette circule en continu avec des départs environ toutes les 20 minutes, 24 heures sur 24, 7 jours sur 7."
+      - question: "Combien de temps avant mon vol dois-je être présent au parking ?"
+        answer: "Nous conseillons d'être présent 2h30 avant les vols européens ou 3h30 avant les vols intercontinentaux. Prévoyez du temps supplémentaire en haute saison."
+      - question: "Dois-je remettre mes clés de voiture chez GreenParking Zaventem ?"
+        answer: "Non, vous n'avez pas besoin de remettre vos clés de voiture. Votre voiture reste sur la même place de parking jusqu'à votre retour."
+      - question: "Où s'arrête la navette à l'aéroport ?"
+        answer: "La navette s'arrête à l'Arrêt de bus E, Hall des arrivées Niveau 0."
+      - question: "Objets trouvés"
+        answer: "Les objets trouvés peuvent être récupérés au Vilvoordelaan 122, Machelen. Les objets ne sont pas envoyés par la poste, mais peuvent être expédiés par coursier si vous fournissez une étiquette d'envoi."
+
+  - title: "Annulation"
+    questions:
+      - question: "Comment puis-je communiquer une modification ?"
+        answer: "Envoyez un e-mail à <a href=\"mailto:info@greenparking.eu\" style=\"color: var(--color-orange);\">info@greenparking.eu</a> ou appelez le +32 2 400 39 03 pour communiquer des modifications."
+      - question: "J'arrive un jour plus tard. Que faire ?"
+        answer: "Contactez notre service client le plus rapidement possible au +32 2 400 39 03, afin que la modification soit traitée et que la barrière fonctionne correctement."
+      - question: "Je viens finalement avec une autre voiture au parking. Comment le signaler ?"
+        answer: "Envoyez un e-mail à <a href=\"mailto:info@greenparking.eu\" style=\"color: var(--color-orange);\">info@greenparking.eu</a> avec les données de réservation correctes et la nouvelle plaque d'immatriculation. La modification sera traitée rapidement."
+
+  - title: "Lieux"
+    questions:
+      - question: "Quelle est l'adresse du parking ?"
+        answer: "L'adresse du parking se trouve sur le bon que vous recevez après votre réservation."
+      - question: "Quel numéro puis-je appeler si je ne trouve pas le chemin ?"
+        answer: "Notre service client est disponible 24h/24 7j/7 au +32 2 400 39 03."
+      - question: "Puis-je également venir la nuit ?"
+        answer: "Oui, nos parkings sont ouverts 24 heures sur 24, 7 jours sur 7."
+
+cta:
+  heading: "Votre question n'est pas listée ? Contactez-nous !"
+  button_text: "Nous contacter"
+  button_url: "fr/contact.html"

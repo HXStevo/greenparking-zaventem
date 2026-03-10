@@ -1,0 +1,55 @@
+title: "Comparaison des parkings Zaventem | GreenParking Zaventem"
+meta_description: "Voulez-vous comparer les parkings à Zaventem? Ne cherchez plus et choisissez le bon service et les tarifs avantageux de GreenParking Zaventem."
+
+hero:
+  heading: "Comparer le parking de l'aéroport de <em>Zaventem</em>"
+  paragraphs:
+    - "Voulez-vous comparer les différents parkings à Zaventem? Alors vous êtes au bon endroit chez GreenParking. Nous offrons des tarifs compétitifs, un excellent service et une navette gratuite vers l'aéroport."
+    - "Chez GreenParking Zaventem, plus besoin de chercher. Nous combinons des prix avantageux avec une qualité supérieure, pour que vous puissiez voyager l'esprit tranquille."
+  image: "images/illustration.png"
+  image_alt: "Comparaison des parkings Zaventem"
+
+benefits:
+  heading: "Pourquoi comparer les <em>parkings</em>?"
+  cards:
+    - icon: "terminal"
+      title: "Direct au hall de départ"
+      text: "Avec notre navette gratuite, vous êtes au hall de départ de Zaventem Airport en environ 15 minutes."
+      image: "images/shuttle-bus.jpg"
+      image_alt: "Navette vers le hall de départ"
+    - icon: "clock"
+      title: "Gagnez du temps"
+      text: "Plus besoin de chercher une place de parking à l'aéroport. Garez-vous rapidement et facilement chez GreenParking."
+      image: "images/parking-lot.jpg"
+      image_alt: "Stationnement rapide"
+    - icon: "phone"
+      title: "Disponible 24h/24 7j/7"
+      text: "Notre service client est joignable jour et nuit au 02/4003903. Nous sommes toujours à votre disposition."
+      image: "images/security-camera.jpg"
+      image_alt: "Disponible 24h/24 7j/7"
+
+booking:
+  heading: "Calculez votre tarif de parking"
+
+long_parking:
+  heading: "Zaventem <em>parking longue durée</em>"
+  image: "images/parking-lot-full.jpg"
+  image_alt: "Parking longue durée Zaventem"
+  paragraphs:
+    - "Vous partez en voyage pour une longue période et cherchez une solution de parking avantageuse à Zaventem? Alors GreenParking est le choix idéal. Nos tarifs sont très compétitifs, même pour les longues durées."
+    - "N'hésitez pas à comparer les prix avec d'autres prestataires. Vous constaterez que GreenParking Zaventem offre un excellent rapport qualité-prix. Et tout cela avec la certitude d'une surveillance par caméras 24h/24 et un service de navette gratuit."
+
+greenparking_long:
+  heading: "Parking longue durée avec <em>GreenParking</em>"
+  image: "images/traveler.jpg"
+  image_alt: "Parking longue durée GreenParking"
+  paragraphs:
+    - "Chez GreenParking, vous n'avez pas besoin de réserver des jours à l'avance. Vous pouvez même réserver une place de parking jusqu'à 20 minutes avant votre départ. Vous êtes toujours assuré d'avoir une place, même pour les voyages de dernière minute."
+    - "Notre parking est sécurisé 24h/24 par des caméras et bien éclairé. Vous gardez vos propres clés de voiture, de sorte que votre voiture se trouve exactement au même endroit lorsque vous revenez. La navette gratuite circule en continu entre le parking et l'aéroport."
+
+cta:
+  heading: "Le parking pour <em>vous</em>!"
+  text: "Convaincu? Réservez directement votre place de parking chez GreenParking Zaventem et commencez votre voyage sans soucis. Avec nos tarifs avantageux et notre service de navette gratuit, se garer à Zaventem n'a jamais été aussi simple."
+  phone: "02/4003903"
+  button_text: "Réservez directement votre place!"
+  button_url: "fr/reservez-une-place-deparking-zaventem.html"

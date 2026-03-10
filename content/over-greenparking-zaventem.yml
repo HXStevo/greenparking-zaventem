@@ -1,0 +1,38 @@
+title: "Over GreenParking Zaventem | GreenParking Zaventem"
+meta_description: "Leer meer over GreenParking Zaventem. Betrouwbaar en voordelig parkeren bij Brussel Zaventem Airport sinds 2010."
+
+hero:
+  heading: "Parkeren op Zaventem: <em>betrouwbaar en voordelig</em>"
+  paragraphs:
+    - "GreenParking biedt sinds 2010 kwalitatief goede parkeerplaatsen aan nabij Brussel Zaventem Airport. Betrouwbaarheid en gebruiksvriendelijkheid staan centraal bij alles wat wij doen."
+    - "Of je nu op vakantie gaat of een zakenreis maakt, bij GreenParking kun je je auto zorgeloos achterlaten op ons beveiligde terrein. Met onze gratis shuttlebus ben je in ongeveer 15 minuten op de luchthaven."
+  image: "images/traveler.jpg"
+  image_alt: "Over GreenParking"
+
+stats:
+  - value: "40+"
+    label: "Jaren gecombineerde ervaring"
+  - value: "240.000+"
+    label: "Tevreden reizigers"
+  - value: "24/7"
+    label: "Bereikbaar en beveiligd"
+  - value: "15 min"
+    label: "Van parking naar terminal"
+
+benefits:
+  heading: "Waarom kiezen voor GreenParking?"
+  items_left:
+    - "Voordelig lang parkeren tijdens je reis"
+    - "Gratis shuttle van/naar de luchthaven"
+    - "Parkeerlocatie nabij Zaventem"
+  items_right:
+    - "24/7 camerabewaking"
+    - "Geen verborgen kosten"
+    - "Klantenservice 24/7 bereikbaar"
+
+location:
+  heading: "Stel je navigatie in op <em>Vilvoordelaan</em>"
+  image: "images/parking-lot-full.jpg"
+  paragraphs:
+    - "Na je boeking ontvang je een bevestiging per e-mail met het exacte adres van de parkeerlocatie. Stel je navigatie in op de Vilvoordelaan en volg de aanwijzingen naar GreenParking."
+    - "Heb je vragen? Onze klantenservice is 24/7 bereikbaar op <strong>+32 2 400 39 03</strong>."

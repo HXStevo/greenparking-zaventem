@@ -1,0 +1,8 @@
+<div class="usp-bar">
+    <div class="container">
+        {% set usp_items = page_usp_bar if page_usp_bar else globals.usp_bar %}
+        {% for item in usp_items %}
+        <div class="usp-item"><span class="usp-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>{{ item }}</div>
+        {% endfor %}
+    </div>
+</div>

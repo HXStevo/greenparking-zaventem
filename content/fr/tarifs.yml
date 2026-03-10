@@ -1,0 +1,34 @@
+title: "Tarifs du parking Zaventem | GreenParking Zaventem"
+meta_description: "Calculez maintenant votre tarif pour le parking Zaventem."
+
+hero:
+  heading: "Tarifs<br><em>Bruxelles Zaventem</em> parking"
+  text: "Si vous souhaitez des tarifs avantageux, c'est une bonne idée de réserver chez GreenParking. Vous pouvez stationner chez nous à partir de &euro;3,57 par jour ! Les tarifs peuvent varier en haute ou basse saison. La disponibilité restante joue également un rôle. Il est judicieux de réserver le plus tôt possible, les tarifs sont souvent les plus avantageux à ce moment-là. Vous pouvez consulter les tarifs actuels de stationnement sur notre site web. Remplissez vos dates de départ et d'arrivée et vous verrez immédiatement ce que vous devez payer. Réservez directement pour éviter toute déception ultérieure."
+  image: "images/illustration.png"
+  image_alt: "Illustration stationnement à Zaventem"
+
+calculator:
+  heading: "<em>Calculez</em> le tarif"
+  info_heading: "Combien coûte le stationnement à Zaventem ?"
+  info_paragraphs:
+    - "Remplissez vos dates de départ et d'arrivée souhaitées pour calculer le tarif actuel. Vous voyez immédiatement ce que vous payez, sans frais cachés. Après le calcul, vous pouvez réserver directement et ainsi obtenir le meilleur prix."
+    - "Les tarifs de GreenParking Zaventem sont jusqu'à 20% moins chers que le stationnement à l'aéroport même. De plus, notre service comprend une navette gratuite 24h/24 vers et depuis le terminal."
+
+benefits_banner:
+  heading: "GreenParking : voyager de manière fiable et avantageuse"
+  image: "images/parking-lot-full.jpg"
+  items:
+    - "Voyager de manière fiable et avantageuse"
+    - "20% moins cher que le stationnement à l'aéroport de Zaventem"
+    - "Navette gratuite 24h/24 vers/depuis le terminal"
+    - "Aucun frais supplémentaire après la réservation"
+    - "Caméras de surveillance sur le parking"
+    - "À 15 minutes de Bruxelles &ndash; Zaventem"
+
+shuttle_parking:
+  heading: "Parkings avec <em>service de navette</em>"
+  image: "images/parking-lot.jpg"
+  paragraphs:
+    - "GreenParking Zaventem dispose d'un terrain situé sur la Vilvoordelaan."
+    - "<strong>Déjà 240.000 visiteurs nous ont fait confiance !</strong>"
+  cta_heading: "Vérifiez la disponibilité en ligne et réservez"

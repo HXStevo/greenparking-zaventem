@@ -1,0 +1,33 @@
+<header class="header">
+    <div class="header-secondary">
+        <div class="container">
+            {% for item in globals.secondary_nav %}
+            <a href="{{ item.url }}">{{ item.label }}</a>
+            {% endfor %}
+            <span class="lang-divider"></span>
+            <a href="index.html" class="active">Nederlands</a>
+            <a href="#">Fran&ccedil;ais</a>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="{{ globals.logo }}" alt="{{ globals.site_name }}"></a>
+            <nav class="main-nav">
+                {% for item in globals.main_nav %}
+                <a href="{{ item.url }}">{{ item.label }}</a>
+                {% endfor %}
+                <a href="reserveren.html" class="btn-cta">Reserveer mijn plek</a>
+            </nav>
+            <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</header>
+<div class="mobile-menu">
+    {% for item in globals.main_nav %}
+    <a href="{{ item.url }}">{{ item.label }}</a>
+    {% endfor %}
+    {% for item in globals.secondary_nav %}
+    <a href="{{ item.url }}">{{ item.label }}</a>
+    {% endfor %}
+    <a href="reserveren.html" class="btn-cta">Reserveer mijn plek</a>
+</div>

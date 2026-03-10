@@ -1,0 +1,34 @@
+title: "Place de parking à Zaventem | GreenParking Zaventem"
+meta_description: "Garez-vous en toute sécurité et à moindre coût près de l'aéroport de Bruxelles Zaventem grâce à GreenParking."
+
+hero:
+  heading: "Vous cherchez une <em>place de parking près de Zaventem</em> ?"
+  paragraphs:
+    - "GreenParking Zaventem dispose d'un parking situé sur la Vilvoordelaan à Zaventem. Le terrain est ouvert 24h/24 7j/7 et offre un service de navette gratuit vers et depuis l'aéroport de Bruxelles Zaventem."
+    - "Le parking dispose de places spacieuses, d'une vidéosurveillance 24h/24 et est facilement accessible depuis l'autoroute. Que vous soyez un voyageur d'affaires ou en vacances, chez GreenParking vous êtes à la bonne adresse pour un stationnement avantageux et sûr."
+  image: "images/parking-lot.jpg"
+  image_alt: "Emplacement du parking GreenParking"
+
+benefits:
+  heading: "Pourquoi GreenParking Zaventem ?"
+  items_left:
+    - "Places de parking spacieuses"
+    - "Vidéosurveillance 24h/24 7j/7"
+    - "Bonne accessibilité depuis l'autoroute"
+    - "Adapté aux voyageurs d'affaires et de loisirs"
+  items_right:
+    - "Tarifs les plus avantageux pour Zaventem"
+    - "Navette gratuite 24h/24 7j/7"
+    - "Aucun frais caché après la réservation"
+    - "Service client disponible 24h/24 7j/7"
+
+locations:
+  - name: "Vilvoordelaan"
+    description: "Notre parking principal est situé sur la Vilvoordelaan à Machelen, à environ 15 minutes de l'aéroport de Bruxelles Zaventem. Le terrain est asphalté, bien éclairé et sous vidéosurveillance 24h/24."
+    image: "images/parking-lot-full.jpg"
+  - name: "Budasteenweg"
+    description: "Un deuxième emplacement se trouve sur la Budasteenweg. Ce terrain offre également un service de navette gratuit vers le terminal et bénéficie d'une surveillance continue."
+    image: "images/parking-lot.jpg"
+
+cta:
+  heading: "Vérifiez la disponibilité en ligne et réservez"

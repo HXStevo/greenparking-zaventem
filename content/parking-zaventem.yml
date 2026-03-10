@@ -1,0 +1,59 @@
+title: Goedkope parking Zaventem Airport | GreenParking Zaventem seanoooooo
+meta_description: Goedkoop parkeren bij Zaventem Airport. Gratis shuttlebus,
+  24/7 beveiligd. Reserveer nu bij GreenParking Zaventem.
+hero:
+  heading: <em>Goedkope</em> parking Zaventem Airport
+  text: Bij GreenParking kun je je auto veilig en voordelig parkeren. De gratis
+    shuttlebus brengt je vervolgens in ongeveer 15 minuten naar de luchthaven.
+    Of je nu kort of lang gaat parkeren, bij ons ben je aan het juiste adres.
+    Reserveer je parkeerplaats en geniet van een zorgeloze start van je reis.
+  image: images/illustration.png
+  image_alt: Parkeren bij Zaventem
+booking:
+  heading: Check je prijs en reserveer
+shuttle:
+  heading: Shuttle parking <em>service</em>
+  image: images/shuttle-bus.jpg
+  image_alt: Shuttle service
+  paragraphs:
+    - Heb je geparkeerd op ons beveiligde terrein? Neem dan de gratis shuttlebus
+      richting de luchthaven. De shuttle rijdt regelmatig met korte wachttijden.
+      Wij adviseren om 2,5 uur voor Europese vluchten en 3,5 uur voor
+      intercontinentale vluchten aanwezig te zijn op de parking.
+    - Onze parkeerterreinen zijn beveiligd met beveiligingscamera's. Om de
+      parking op te komen scan je de barcode op je voucher zodat de slagbomen
+      open gaan.
+how_it_works:
+  heading: Zo werkt parkeren
+  heading_emphasis: bij GreenParking Zaventem
+  cards:
+    - image: images/parking-lot.jpg
+      alt: Online reserveren
+      text: Online reserveren binnen 1 minuut
+    - image: images/barrier-gates.jpg
+      alt: Beveiligd terrein
+      text: Parkeer op ons beveiligde terrein nabij de luchthaven
+    - image: images/security-camera.jpg
+      alt: Camerabewaking
+      text: Met camera's beveiligde parkeerterreinen
+    - image: images/shuttle-bus.jpg
+      alt: Gratis shuttle
+      text: Gratis shuttle service 24/7
+benefits:
+  heading: Voordelen van parkeren bij <em>GreenParking</em>
+  image: images/traveler.jpg
+  items:
+    - Voordelige tarieven
+    - Gratis shuttlebus service
+    - Goed verlichte parkeerterreinen
+    - 24/7 camerabewaking
+    - Klantenservice 24/7 bereikbaar
+location:
+  heading: "Locatie: <em>Vilvoordelaan</em>"
+  image: images/parking-lot-full.jpg
+  paragraphs:
+    - Onze parkeerterreinen zijn gelegen aan de Vilvoordelaan, op ongeveer 15
+      minuten van de vertrekhal. Stel je navigatie in op Vilvoordelaan en volg
+      de borden naar GreenParking.
+    - Na je boeking ontvang je een voucher met het exacte adres en
+      routebeschrijving per e-mail.

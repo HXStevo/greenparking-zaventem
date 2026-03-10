@@ -1,0 +1,74 @@
+{% extends "fr/_layout.njk" %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-content">
+                    <h1 style="font-size: 38px; font-weight: 800; color: var(--color-primary); line-height: 1.2;">{{ page.hero.heading | safe }}</h1>
+                    {% for p in page.hero.paragraphs %}
+                    <p {% if loop.first %}style="margin-top: 20px;"{% endif %}>{{ p }}</p>
+                    {% endfor %}
+                </div>
+                <div>
+                    <img src="{{ page.hero.image }}" alt="{{ page.hero.image_alt }}" style="border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 style="margin-bottom: 30px;">{{ page.benefits.heading }}</h2>
+            <div class="two-col">
+                <div class="benefits-list">
+                    {% for item in page.benefits.items_left %}
+                    <div class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>{{ item }}</div>
+                    {% endfor %}
+                </div>
+                <div class="benefits-list">
+                    {% for item in page.benefits.items_right %}
+                    <div class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>{{ item }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="section">
+        <div class="container">
+            {% for loc in page.locations %}
+            <div class="two-col" {% if not loop.first %}style="margin-top: 50px;"{% endif %}>
+                {% if loop.index is odd %}
+                <div>
+                    <img src="{{ loc.image }}" alt="{{ loc.name }}" style="border-radius: 12px;">
+                </div>
+                <div class="two-col-content">
+                    <h2>{{ loc.name }}</h2>
+                    <p>{{ loc.description }}</p>
+                </div>
+                {% else %}
+                <div class="two-col-content">
+                    <h2>{{ loc.name }}</h2>
+                    <p>{{ loc.description }}</p>
+                </div>
+                <div>
+                    <img src="{{ loc.image }}" alt="{{ loc.name }}" style="border-radius: 12px;">
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="cta-section">
+                <h3>{{ page.cta.heading }}</h3>
+                <a href="fr/reserver-ma-place.html" class="btn-cta">Réserver ma place &rarr;</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

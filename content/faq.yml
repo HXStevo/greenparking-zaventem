@@ -1,0 +1,54 @@
+title: "Veelgestelde vragen | GreenParking Zaventem"
+meta_description: "Veelgestelde vragen over parkeren bij GreenParking Zaventem. Alles over reserveren, shuttle service en locaties."
+
+heading: "Veelgestelde vragen"
+
+categories:
+  - title: "Reserveren"
+    questions:
+      - question: "Hoe werkt het reserveren?"
+        answer: "Het reserveren gaat in drie stappen: vul je vertrek- en aankomstdata en tijden in, vul je gegevens in en bevestig de reservering. De betaling vindt later online plaats. Je ontvangt 48 uur voor vertrek een betaallink. Voor boekingen binnen 48 uur moet de betaling binnen 3 uur worden voldaan, anders wordt de reservering geannuleerd."
+      - question: "Hoeveel kost parkeren?"
+        answer: "De kosten zijn afhankelijk van het seizoen en de beschikbaarheid. Om het actuele tarief te zien, vul je vertrek- en aankomstdata in via onze website. Je ziet direct de prijs zonder verdere verplichtingen."
+
+  - title: "Parkeren bij GreenParking"
+    questions:
+      - question: "Wat is shuttle service?"
+        answer: "Een gratis shuttlebus rijdt 24/7 tussen de GreenParking parkeerplaats en Brussel Zaventem Airport. Je hoeft je sleutels niet af te geven en hoeft zelf geen vervoer te regelen."
+      - question: "Kan ik overdekt parkeren?"
+        answer: "Nee, de parkeerterreinen zijn niet overdekt maar beschikken over een geasfalteerd terrein, 24/7 verlichting en continue camerabewaking."
+      - question: "Mag ik met mijn camper of verlengd voertuig parkeren?"
+        answer: "Campers en verlengde voertuigen zijn niet toegestaan. De maximale voertuiglengte is 5 meter en de maximale breedte is 2,40 meter."
+      - question: "Waar vind ik informatie over de bus rijtijden?"
+        answer: "De shuttlebus rijdt continu met vertrekken ongeveer elke 20 minuten, 24 uur per dag, 7 dagen per week."
+      - question: "Hoeveel uur van te voren moet ik aanwezig zijn op de parking?"
+        answer: "Wij adviseren om 2,5 uur voor Europese vluchten of 3,5 uur voor intercontinentale vluchten aanwezig te zijn. Houd in het hoogseizoen extra tijd aan."
+      - question: "Moet ik mijn autosleutel afgeven bij GreenParking Zaventem?"
+        answer: "Nee, je hoeft je autosleutel niet af te geven. Je auto blijft op dezelfde parkeerplaats staan tot je terugkomt."
+      - question: "Waar stopt de shuttlebus op de luchthaven?"
+        answer: "De shuttlebus stopt bij Bushalte E, Aankomsthal Level 0."
+      - question: "Lost and found"
+        answer: "Gevonden voorwerpen kunnen worden opgehaald op Vilvoordelaan 122, Machelen. Voorwerpen worden niet per post verstuurd, maar kunnen wel via een koerier worden verzonden als je een verzendetiket aanlevert."
+
+  - title: "Annuleren en wijzigen boeking"
+    questions:
+      - question: "Hoe kan ik een wijziging doorgeven?"
+        answer: "Stuur een e-mail naar <a href=\"mailto:info@greenparking.eu\" style=\"color: var(--color-orange);\">info@greenparking.eu</a> of bel +32 2 400 39 03 om wijzigingen door te geven."
+      - question: "Ik kom een dag later. Wat nu?"
+        answer: "Neem zo snel mogelijk contact op met onze klantenservice op +32 2 400 39 03, zodat de wijziging wordt verwerkt en de slagboom correct werkt."
+      - question: "Ik kom toch met een andere auto naar de parking. Hoe kan ik dit doorgeven?"
+        answer: "Stuur een e-mail naar <a href=\"mailto:info@greenparking.eu\" style=\"color: var(--color-orange);\">info@greenparking.eu</a> met de juiste boekingsgegevens en het nieuwe kenteken. De wijziging wordt snel verwerkt."
+
+  - title: "Locaties"
+    questions:
+      - question: "Wat is het adres van de parkeerlocatie?"
+        answer: "Het adres van de parkeerlocatie vind je op de voucher die je ontvangt na je boeking."
+      - question: "Welk nummer kan ik bellen als ik de weg niet kan vinden?"
+        answer: "Onze klantenservice is 24/7 bereikbaar op +32 2 400 39 03."
+      - question: "Kan ik 's nachts ook bij jullie terecht?"
+        answer: "Ja, onze parkeerterreinen zijn 24 uur per dag, 7 dagen per week geopend."
+
+cta:
+  heading: "Staat je vraag er niet bij? Neem contact met ons op!"
+  button_text: "Contact opnemen"
+  button_url: "contact.html"

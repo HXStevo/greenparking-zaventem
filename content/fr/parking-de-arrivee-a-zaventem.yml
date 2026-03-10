@@ -1,0 +1,45 @@
+title: "Parking d'arrivée à Zaventem | GreenParking Zaventem"
+meta_description: "Garez votre voiture auprès de Green Parking Zaventem. Tarifs pas cher. ✓ Navette gratuite ✓ Sécurisé 24/7 ✓ Réservez en ligne"
+
+hero:
+  heading: "Parking d'arrivée à <em>Zaventem</em>"
+  paragraphs:
+    - "Vous cherchez un parking d'arrivée à Zaventem? Chez GreenParking Zaventem, vous garez votre voiture en toute sécurité à un tarif avantageux. Notre navette gratuite vous emmène directement au hall de départ en environ 15 minutes."
+    - "À votre retour, la navette vous ramène au parking où votre voiture vous attend exactement là où vous l'avez laissée. Simple, sûr et abordable."
+  image: "images/illustration.png"
+  image_alt: "Parking d'arrivée Zaventem"
+
+benefits:
+  heading: "Les avantages du <em>parking d'arrivée</em>"
+  cards:
+    - title: "Direct au hall de départ"
+      text: "Avec notre navette gratuite, vous êtes au hall de départ de Zaventem Airport en environ 15 minutes. Plus besoin de transports en commun coûteux."
+      icon: "location"
+    - title: "Gagnez du temps"
+      text: "Rendez-vous directement à notre parking et montez dans la navette. Pas de longues marches ni de recherche de place. Nous recommandons d'arriver 2h30 avant les vols européens."
+      icon: "clock"
+    - title: "Disponible 24h/24 7j/7"
+      text: "Notre parking et notre service client sont disponibles 24 heures sur 24, 7 jours sur 7. Vol tôt le matin ou atterrissage tard le soir? Aucun problème!"
+      icon: "phone"
+
+vacation:
+  heading: "Partez en vacances <em>l'esprit tranquille</em>"
+  image: "images/traveler.jpg"
+  image_alt: "Voyageur à l'aéroport"
+  paragraphs:
+    - "Que vous partiez en vacances au soleil ou en voyage d'affaires, chez GreenParking Zaventem, votre voiture est entre de bonnes mains. Nos parkings sont surveillés 24h/24 par des caméras et sont bien éclairés."
+    - "Vous gardez vos propres clés de voiture, de sorte que personne d'autre ne puisse accéder à votre véhicule. Profitez de votre voyage sans vous soucier de votre voiture."
+
+ideal:
+  heading: "Le parking <em>idéal</em> près de Zaventem"
+  image: "images/parking-lot-full.jpg"
+  image_alt: "Parking GreenParking Zaventem"
+  paragraphs:
+    - "GreenParking Zaventem est le parking idéal pour tous les voyageurs au départ de Brussels Airport. Nos terrains spacieux sont situés à la Vilvoordelaan, à seulement 15 minutes de l'aéroport."
+    - "Après votre réservation en ligne, vous recevez un voucher avec code-barres par e-mail. À votre arrivée, scannez le code-barres à la barrière et garez votre voiture. Au retour, scannez à nouveau et rentrez chez vous."
+
+cta:
+  heading: "Réservez votre parking d'arrivée à <em>Zaventem</em>"
+  text: "Consultez la disponibilité et les tarifs en ligne et réservez directement votre place de parking chez GreenParking Zaventem. Profitez de tarifs avantageux et d'un service de navette gratuit."
+  image: "images/shuttle-bus.jpg"
+  image_alt: "Navette GreenParking"

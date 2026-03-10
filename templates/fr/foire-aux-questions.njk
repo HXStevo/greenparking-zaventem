@@ -1,0 +1,30 @@
+{% extends "fr/_layout.njk" %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <h1 style="font-size: 38px; font-weight: 800; color: var(--color-primary); margin-bottom: 40px;">{{ page.heading }}</h1>
+
+            {% for category in page.categories %}
+            <div class="faq-category">
+                <h2 class="faq-category-title">{{ category.title }}</h2>
+                {% for item in category.questions %}
+                <div class="faq-item">
+                    <button class="faq-question">{{ item.question }} <span class="faq-toggle">+</span></button>
+                    <div class="faq-answer"><p>{{ item.answer | safe }}</p></div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="cta-section">
+                <h3>{{ page.cta.heading }}</h3>
+                <a href="{{ page.cta.button_url }}" class="btn-cta">{{ page.cta.button_text }} &rarr;</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

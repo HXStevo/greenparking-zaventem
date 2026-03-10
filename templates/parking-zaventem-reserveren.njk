@@ -1,0 +1,72 @@
+{% extends "_layout.njk" %}
+
+{% block content %}
+    <!-- Hero Section with Booking Form -->
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-content">
+                    <h1 style="font-size: 38px; font-weight: 800; color: var(--color-primary); line-height: 1.2;">{{ page.hero.heading | safe }}</h1>
+                    <p style="margin-top: 20px;">{{ page.hero.text }}</p>
+                </div>
+                <div>
+                    <img src="{{ page.hero.image }}" alt="{{ page.hero.image_alt }}" style="border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Widget -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 style="margin-bottom: 25px;">{{ page.booking.heading }}</h2>
+            {% include "_partials/booking-form.njk" %}
+        </div>
+    </section>
+
+    <!-- Three Benefits Columns -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>{{ page.benefits.heading | safe }}</h2>
+            </div>
+            <div class="card-grid">
+                {% for card in page.benefits.cards %}
+                <div class="card">
+                    <img src="{{ card.image }}" alt="{{ card.image_alt }}">
+                    <h3 style="margin: 15px 0 10px; color: var(--color-primary);">{{ card.title }}</h3>
+                    <p>{{ card.text }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-content">
+                    <h2>{{ page.content.heading | safe }}</h2>
+                    {% for p in page.content.paragraphs %}
+                    <p>{{ p }}</p>
+                    {% endfor %}
+                </div>
+                <div>
+                    <img src="{{ page.content.image }}" alt="{{ page.content.image_alt }}" style="border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-section">
+                <h2>{{ page.cta.heading }}</h2>
+                <p style="margin: 15px 0 25px; max-width: 600px;">{{ page.cta.text }}</p>
+                <a href="{{ page.cta.button_url }}" class="btn-cta">{{ page.cta.button_text }} &rarr;</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,40 @@
+title: "Klantenservice | GreenParking Zaventem"
+meta_description: "Klantenservice GreenParking Zaventem. 24/7 bereikbaar via telefoon en e-mail."
+
+heading: "Hoe kunnen wij jou helpen?"
+intro: "Graag helpen wij jou op de volgende manieren bij vragen over lang parkeren bij GreenParking Zaventem."
+
+contact_cards:
+  - icon: "&#9993;"
+    title: "E-mail"
+    text: "Stuur ons een e-mail en we reageren dezelfde dag nog"
+    link_text: "info@greenparking.eu"
+    link_url: "mailto:info@greenparking.eu"
+  - icon: "&#9742;"
+    title: "Telefoon"
+    text: "24/7 bereikbaar voor al je vragen"
+    link_text: "+32 2 400 39 03"
+    link_url: "tel:+3224003903"
+  - icon: "&#10067;"
+    title: "Veelgestelde vragen"
+    text: "Antwoorden op vragen over reserveringen, faciliteiten, diensten en shuttle"
+    link_text: "Bekijk FAQ &rarr;"
+    link_url: "faq.html"
+
+service:
+  heading: "Onze service"
+  items_left:
+    - "Voordelig lang parkeren tijdens je reis"
+    - "Gratis shuttle van/naar de luchthaven"
+    - "Dichtbij Zaventem Airport"
+  items_right:
+    - "24/7 camerabewaking"
+    - "Geen verborgen kosten"
+    - "Klantenservice 24/7 online en telefonisch"
+
+location:
+  heading: "Onze parkeerlocatie"
+  image: "images/parking-lot.jpg"
+  paragraphs:
+    - "Onze parkeerterreinen zijn gelegen aan de Vilvoordelaan. Na je boeking ontvang je een voucher per e-mail met het exacte adres van de parkeerlocatie."
+    - "Heb je vragen of hulp nodig? Neem gerust contact met ons op. Wij staan je graag te woord!"

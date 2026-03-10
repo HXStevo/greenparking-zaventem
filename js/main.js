@@ -163,6 +163,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 'qp-arrival-time': arrTime
             });
 
+            // Append agent code if available
+            if (window.GreenParkingAgent && window.GreenParkingAgent.current) {
+                params.set('agent', window.GreenParkingAgent.current);
+            }
+
             window.location.href = 'https://greenparkingzaventem.be/reserveren/?' + params.toString();
         });
     });

@@ -1,0 +1,69 @@
+{% extends "fr/_layout.njk" %}
+
+{% block content %}
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-content">
+                    <h1 style="font-size: 38px; font-weight: 800; color: var(--color-primary); line-height: 1.2;">{{ page.hero.heading | safe }}</h1>
+                    <p style="margin-top: 20px;">{{ page.hero.text | safe }}</p>
+                </div>
+                <div>
+                    <img src="{{ page.hero.image }}" alt="{{ page.hero.image_alt }}" style="border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculez le tarif -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="two-col">
+                <div>
+                    <h2>{{ page.calculator.heading | safe }}</h2>
+                    {% include "_partials/booking-form.njk" %}
+                </div>
+                <div class="two-col-content">
+                    <h3>{{ page.calculator.info_heading }}</h3>
+                    {% for p in page.calculator.info_paragraphs %}
+                    <p>{{ p }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Banner -->
+    <section class="image-section" style="background-image: url('{{ page.benefits_banner.image }}');">
+        <div class="container">
+            <h2 style="color: var(--color-white); margin-bottom: 30px;">{{ page.benefits_banner.heading }}</h2>
+            <div class="benefits-list benefits-list-white">
+                {% for item in page.benefits_banner.items %}
+                <div class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>{{ item | safe }}</div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <div class="section-green"></div>
+
+    <!-- Shuttle Parking -->
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-content">
+                    <h2>{{ page.shuttle_parking.heading | safe }}</h2>
+                    {% for p in page.shuttle_parking.paragraphs %}
+                    <p>{{ p | safe }}</p>
+                    {% endfor %}
+                    <h3 style="margin-top: 25px;">{{ page.shuttle_parking.cta_heading }}</h3>
+                    <a href="fr/reserver-ma-place.html" class="btn-cta" style="margin-top: 15px;">Réserver ma place &rarr;</a>
+                </div>
+                <div>
+                    <img src="{{ page.shuttle_parking.image }}" alt="Parking GreenParking" style="border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,60 @@
+title: "GreenParking Zaventem | Parkeren Zaventem | Goedkoop & Betrouwbaar"
+meta_description: "Voordelig parkeren bij Brussel Zaventem Airport. Gratis 24/7 shuttlebus, 24/7 beveiligd. Vanaf &euro;3,57 per dag. Reserveer nu!"
+og_title: "GreenParking Zaventem | Parkeren Zaventem"
+og_description: "Voordelig parkeren bij Brussel Zaventem Airport met gratis shuttlebus."
+
+hero:
+  heading: "Voordelige parking Brussel Zaventem"
+  text: "Zoek je een goede parking om je auto voordelig te parkeren die slechts op 15 minuten van de luchthaven zelf ligt? Dan ben je bij GreenParking aan het juiste adres. Onze parking vind je vlakbij Brussel Zaventem Airport dus je bent zo op de luchthaven met onze gratis shuttlebus! Een ander voordeel is dat we vaak 20% goedkoper zijn dan parkeeraanbieders rondom Brussel Zaventem Airport. 240.000 reizigers gingen je voor. Zorg dat je onbezorgd op vakantie of zakenreis kunt en kies voor de betrouwbaarheid en goede service van GreenParking!"
+  image: "images/parking-lot.jpg"
+
+booking:
+  heading: "Check je prijs en reserveer"
+
+how_it_works:
+  heading: "Zo werkt parkeren"
+  heading_emphasis: "bij GreenParking Zaventem"
+  cards:
+    - image: "images/parking-lot.jpg"
+      alt: "Ruime parking"
+      text: "Ruime parking"
+    - image: "images/barrier-gates.jpg"
+      alt: "Slagbomen met barcode scanner"
+      text: "Slagbomen gaan open na het scannen van jouw persoonlijke barcode"
+    - image: "images/shuttle-bus.jpg"
+      alt: "Gratis shuttle service"
+      text: "Gratis shuttle service van en naar Brussel Zaventem Airport"
+    - image: "images/security-camera.jpg"
+      alt: "24/7 beveiligd parkeerterrein"
+      text: "24/7 beveiligd parkeerterrein"
+
+benefits:
+  heading: "De voordelen van GreenParking Zaventem"
+  image: "images/traveler.jpg"
+  items:
+    - "20% goedkoper dan parkeren op de luchthaven"
+    - "Ruime parkeerplekken"
+    - "24/7 beveiligd met beveiligingscamera's"
+    - "Klantenservice 24/7 bereikbaar"
+    - "Gratis shuttlebus brengt je van/naar de terminal"
+    - "Shuttlebus rit duurt ongeveer 15 minuten"
+    - "Neem zelf je autosleutels mee"
+    - "Geen verborgen kosten na het boeken"
+
+shuttle:
+  heading: "24/7 Shuttle Service"
+  image: "images/parking-lot-full.jpg"
+  paragraphs:
+    - "Om de parking van GreenParking Brussel Zaventem Airport op te komen, kun je jouw barcode scannen zodat de slagbomen open gaan. Deze barcode vind je op de voucher die je ontvangt na je boeking. Je kunt de voucher ook op je mobiel opslaan en dan scannen. Als je je auto op een goeie plek hebt gezet, kun je de gratis shuttlebus naar de luchthaven nemen. De rit met de shuttlebus duurt ongeveer 15 minuten. Je bent dus zo bij de vertrekterminal van de luchthaven. Ready for take off!"
+    - "Ook op de terugreis is het eenvoudig om de shuttlebus richting de parking te nemen. Zo ben je snel weer bij je eigen auto."
+    - "Mocht je vragen hebben, neem dan gerust contact op met onze klantenservice, ze staan 24/7 voor je klaar."
+
+pricing:
+  heading: "Wat kost parkeren bij<br>Brussel Zaventem parking?"
+  text: "Wil je graag weten hoeveel je betaalt voor jouw parking? Bekijk dan de voordelige tarieven door te zoeken op de gewenste reisdata. De hoogte van het tarief is onder meer afhankelijk van het seizoen waarvoor je boekt. Het is raadzaam om een parking in het hoogseizoen zo ver mogelijk van tevoren te boeken. Zo pak je het voordeligste tarief en ben je zeker van een fijne plek voor je auto. Op naar die vakantie of zakenreis! Om teleurstellingen te voorkomen raden we aan om alvast een kijkje te nemen. Bereken het <a href=\"reserveren.html\" style=\"color: var(--color-orange);\">actuele tarief</a>."
+
+cta:
+  heading: "Voordelige parking bij Brussel Zaventem? Reserveer bij GreenParking Zaventem!"
+  paragraphs:
+    - "Denk je dat parkeren nabij Brussel Zaventem Airport duur is? Dan zal dat je zeker meevallen als je de voordelige tarieven van GreenParking bekijkt. Een kwalitatief goede parkeerplek hoeft echt niet duur te zijn! Reserveer snel een parkeerplaats op onze parking nabij Brussel Zaventem Airport. Zo weet je zeker dat je auto er goed bijstaat tijdens jouw afwezigheid."
+    - "Wil je meer weten over parkeren bij Brussel Zaventem Airport? Dan kun je altijd de <a href=\"faq.html\" style=\"color: var(--color-orange);\">veelgestelde vragen</a> bekijken of <a href=\"contact.html\" style=\"color: var(--color-orange);\">contact opnemen</a> met onze klantenservice. Ze staan je graag te woord en helpen je graag verder bij het vinden van een geschikte parkeerplek nabij Brussel Zaventem Airport."

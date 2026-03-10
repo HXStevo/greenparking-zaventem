@@ -1,0 +1,48 @@
+title: "Shuttle service | GreenParking Zaventem"
+meta_description: "Gratis 24/7 shuttle service van GreenParking naar Brussel Zaventem Airport. Comfortabel en snel naar de terminal."
+
+hero:
+  heading: "Parkeren met <em>gratis</em> Zaventem shuttle service"
+  paragraphs:
+    - "Bij GreenParking Zaventem kun je voordelig parkeren en gebruik maken van onze gratis shuttlebus. De gratis shuttlebus brengt je vervolgens naar de luchthaven. Het enige wat je hoeft te doen is online reserveren, je ontvangt een voucher met barcode waarmee je de slagbomen kunt openen. Zet je auto neer op een van de ruime parkeerplaatsen en neem de shuttlebus naar de terminal."
+    - "De shuttlebus rijdt 24/7 en de rit duurt ongeveer 15 minuten. Je hoeft je autosleutels niet af te geven, die neem je gewoon zelf mee. Zo weet je zeker dat je auto precies op dezelfde plek staat wanneer je terugkomt van je reis."
+  image: "images/illustration.png"
+  image_alt: "Shuttle service illustratie"
+
+feature_cards:
+  - title: "Veilig parkeren"
+    text: "24/7 beveiligd parkeerterrein met camera's en verlichting"
+    icon: "location"
+  - title: "Gratis shuttlebus"
+    text: "Comfortabele shuttlebus brengt je in ~15 minuten naar de terminal"
+    icon: "bus"
+  - title: "24/7 bereikbaar"
+    text: "Onze klantenservice en shuttlebus zijn dag en nacht beschikbaar"
+    icon: "clock"
+
+how_shuttle_works:
+  heading: "Hoe werkt de <em>shuttle service</em>?"
+  image: "images/shuttle-bus.jpg"
+  image_alt: "Shuttlebus GreenParking"
+  paragraphs:
+    - "Na het reserveren ontvang je een voucher met een barcode. Bij aankomst op de parking scan je deze barcode waardoor de slagbomen open gaan. Parkeer je auto op een van de ruime plekken en loop naar de bushalte op het terrein."
+    - "De shuttlebus rijdt continu, met vertrekken ongeveer elke 20 minuten. De rit naar de luchthaven duurt ongeveer 15 minuten. De shuttle stopt bij Bushalte E, Aankomsthal Level 0."
+    - "Op de terugweg neem je de shuttlebus vanaf de luchthaven terug naar de parking. Scan je barcode bij de slagboom en rij naar huis!"
+
+benefits_banner:
+  heading: "Voordelen van onze shuttle service"
+  image: "images/parking-lot-full.jpg"
+  items:
+    - "Gratis shuttlebus 24/7 beschikbaar"
+    - "Rit duurt slechts ~15 minuten"
+    - "Comfortabele bussen met voldoende zitplaatsen"
+    - "Neem je eigen autosleutels mee"
+    - "Goede bereikbaarheid via de snelweg"
+    - "20% goedkoper dan parkeren op de luchthaven"
+
+cta:
+  heading: "Parkeerlocatie aan de <em>Vilvoordelaan</em>"
+  image: "images/parking-lot.jpg"
+  paragraphs:
+    - "GreenParking Zaventem heeft een terrein gelegen aan de Vilvoordelaan. De parking is 24/7 geopend en beveiligd met camera's."
+    - "<strong>Al 240.000 bezoekers gingen jou voor!</strong>"

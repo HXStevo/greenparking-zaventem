@@ -1,0 +1,123 @@
+{% extends "fr/_layout.njk" %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('{{ page.hero.image }}');">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>{{ page.hero.heading }}</h1>
+                <p>{{ page.hero.text }}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Widget -->
+    <section class="booking-section">
+        <div class="container">
+            <h2>{{ page.booking.heading }}</h2>
+            {% include "_partials/booking-form.njk" %}
+        </div>
+    </section>
+
+    <!-- Comment fonctionne le stationnement -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>{{ page.how_it_works.heading }}<br><em>{{ page.how_it_works.heading_emphasis }}</em></h2>
+            </div>
+            <div class="card-grid">
+                {% for card in page.how_it_works.cards %}
+                <div class="card">
+                    <img src="{{ card.image }}" alt="{{ card.alt }}">
+                    <p>{{ card.text }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="cta-section">
+                <h3>Vérifiez la disponibilité en ligne et réservez</h3>
+                <a href="fr/reserver-ma-place.html" class="btn-cta">Réserver ma place &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Les avantages -->
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-content">
+                    <h2>{{ page.benefits.heading }}</h2>
+                    <div class="benefits-list" style="margin-top: 25px;">
+                        {% for item in page.benefits.items %}
+                        <div class="benefit-item">
+                            <span class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                            {{ item }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div>
+                    <img src="{{ page.benefits.image }}" alt="Voyageur au parking" style="border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service de navette 24h/24 -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="two-col">
+                <div>
+                    <img src="{{ page.shuttle.image }}" alt="Parking GreenParking" style="border-radius: 12px;">
+                </div>
+                <div class="two-col-content">
+                    <h3>{{ page.shuttle.heading }}</h3>
+                    {% for p in page.shuttle.paragraphs %}
+                    <p>{{ p }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combien coûte le stationnement (Dark Section) -->
+    <section class="pricing-dark">
+        <div class="container">
+            <div class="two-col">
+                <div>
+                    <h2>{{ page.pricing.heading | safe }}</h2>
+                    <div class="orange-line"></div>
+                </div>
+                <div>
+                    <p>{{ page.pricing.text | safe }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="cta-icon">
+                    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="40" cy="40" r="38" stroke="#88BC24" stroke-width="3" fill="none"/>
+                        <circle cx="40" cy="35" r="8" stroke="#88BC24" stroke-width="3" fill="none"/>
+                        <path d="M40 48 C40 48 55 38 55 28 C55 18 48 12 40 12 C32 12 25 18 25 28 C25 38 40 48 40 48Z" stroke="#88BC24" stroke-width="2.5" fill="none"/>
+                    </svg>
+                </div>
+                <div class="two-col-content">
+                    <h2>{{ page.cta.heading }}</h2>
+                    {% for p in page.cta.paragraphs %}
+                    <p>{{ p | safe }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="cta-section">
+                <h3>Vérifiez la disponibilité en ligne et réservez</h3>
+                <a href="fr/reserver-ma-place.html" class="btn-cta">Réserver ma place &rarr;</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

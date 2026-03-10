@@ -1,0 +1,49 @@
+site_name: "GreenParking Zaventem"
+logo: "images/logo.svg"
+phone: "+32 2 400 39 03"
+phone_link: "+3224003903"
+email: "info@greenparking.eu"
+
+usp_bar:
+  - "24/7 beveiligd"
+  - "Gratis 24/7 shuttlebussen"
+  - "Autosleutels neem je zelf mee"
+  - "240.000 reizigers gingen jou voor"
+
+bottom_usp:
+  - "240.000 reizigers gingen jou voor"
+  - "gratis 24/7 shuttlebussen"
+  - "24/7 bemand met parkeerbeheerder"
+  - "Neem zelf je autosleutels mee"
+
+secondary_nav:
+  - label: "Over GreenParking Zaventem"
+    url: "over-greenparking-zaventem.html"
+  - label: "Klantenservice"
+    url: "klantenservice.html"
+  - label: "Veelgestelde vragen"
+    url: "faq.html"
+  - label: "Contact"
+    url: "contact.html"
+
+main_nav:
+  - label: "Parking Zaventem"
+    url: "parking-zaventem.html"
+  - label: "Tarieven"
+    url: "tarieven.html"
+  - label: "Shuttle service"
+    url: "shuttle-service.html"
+  - label: "Locaties"
+    url: "locaties.html"
+
+footer_links:
+  - label: "Algemene voorwaarden"
+    url: "#"
+  - label: "Privacy"
+    url: "#"
+  - label: "Webdesign"
+    url: "#"
+
+agents:
+  default: "WT894"
+  search: "SRCH1"

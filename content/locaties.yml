@@ -1,0 +1,31 @@
+title: "Locaties | GreenParking Zaventem"
+meta_description: "Vind de parkeerlocatie van GreenParking Zaventem aan de Vilvoordelaan. Dicht bij Brussel Zaventem Airport."
+
+hero:
+  heading: "Op zoek naar een <em>parking bij Zaventem</em>?"
+  paragraphs:
+    - "GreenParking Zaventem heeft een parkeerterrein gelegen aan de Vilvoordelaan in Zaventem. Het terrein is 24/7 geopend en biedt een gratis shuttleservice van en naar Brussel Zaventem Airport."
+    - "Het parkeerterrein beschikt over ruime parkeerplaatsen, 24/7 camerabewaking en is gemakkelijk bereikbaar vanaf de snelweg. Of je nu een zakenreiziger bent of op vakantie gaat, bij GreenParking ben je aan het juiste adres voor voordelig en veilig parkeren."
+  image: "images/parking-lot.jpg"
+  image_alt: "Parkeerlocatie GreenParking"
+
+map:
+  heading: "Onze locatie"
+  address: "Vilvoordelaan, Zaventem, Belgi&euml;"
+  embed_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.8!2d4.45!3d50.88!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sVilvoordelaan%2C+Zaventem!5e0!3m2!1snl!2sbe!4v1"
+
+benefits:
+  heading: "Waarom GreenParking Zaventem?"
+  items_left:
+    - "Ruime parkeerplekken"
+    - "24/7 camerabewaking"
+    - "Goede bereikbaarheid vanaf de snelweg"
+    - "Geschikt voor zaken- en vakantiereizigers"
+  items_right:
+    - "Voordeligste tarieven voor Zaventem"
+    - "Gratis shuttlebus 24/7"
+    - "Geen verborgen kosten na boeken"
+    - "Klantenservice 24/7 bereikbaar"
+
+cta:
+  heading: "Check online beschikbaarheid en reserveer"

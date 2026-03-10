@@ -1,0 +1,82 @@
+{% extends "_layout.njk" %}
+
+{% block content %}
+    <!-- Hero -->
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-content">
+                    <h1 style="font-size: 38px; font-weight: 800; color: var(--color-primary); line-height: 1.2;">{{ page.hero.heading | safe }}</h1>
+                    {% for p in page.hero.paragraphs %}
+                    <p {% if loop.first %}style="margin-top: 20px;"{% endif %}>{{ p }}</p>
+                    {% endfor %}
+                </div>
+                <div>
+                    <img src="{{ page.hero.image }}" alt="{{ page.hero.image_alt }}" style="border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Widget -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 style="margin-bottom: 25px;">{{ page.booking.heading }}</h2>
+            {% include "_partials/booking-form.njk" %}
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-content">
+                    <h2>{{ page.benefits.heading | safe }}</h2>
+                    <div class="benefits-list" style="margin-top: 25px;">
+                        {% for item in page.benefits.items %}
+                        <div class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg></span>{{ item }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div>
+                    <img src="{{ page.benefits.image }}" alt="Reiziger" style="border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / How it works -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="two-col">
+                <div>
+                    <img src="{{ page.features.image }}" alt="{{ page.features.image_alt }}" style="border-radius: 12px;">
+                </div>
+                <div class="two-col-content">
+                    <h2>{{ page.features.heading | safe }}</h2>
+                    {% for p in page.features.paragraphs %}
+                    <p>{{ p }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations with CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div class="two-col-content">
+                    <h2>{{ page.locations.heading | safe }}</h2>
+                    {% for p in page.locations.paragraphs %}
+                    <p>{{ p }}</p>
+                    {% endfor %}
+                    <a href="reserveren.html" class="btn-cta" style="margin-top: 15px;">Reserveer mijn plek &rarr;</a>
+                </div>
+                <div>
+                    <img src="{{ page.locations.image }}" alt="{{ page.locations.image_alt }}" style="border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

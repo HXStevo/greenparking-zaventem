@@ -1,0 +1,1621 @@
+local_backend: true
+
+locale: "en"
+
+backend:
+  name: github
+  repo: HXStevo/greenparking-zaventem
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "globals"
+    label: "Global Settings"
+    editor:
+      preview: false
+    files:
+      - name: "globals"
+        label: "Site Settings"
+        file: "content/_globals.yml"
+        fields:
+          - { name: "site_name", label: "Site Name", widget: "string" }
+          - { name: "logo", label: "Logo", widget: "image" }
+          - { name: "phone", label: "Phone Number", widget: "string" }
+          - { name: "phone_link", label: "Phone Number (link)", widget: "string" }
+          - { name: "email", label: "Email Address", widget: "string" }
+          - name: "usp_bar"
+            label: "USP Bar (top)"
+            widget: "list"
+            field: { name: "item", label: "USP", widget: "string" }
+          - name: "bottom_usp"
+            label: "USP Bar (bottom)"
+            widget: "list"
+            field: { name: "item", label: "USP", widget: "string" }
+          - name: "secondary_nav"
+            label: "Secondary Navigation"
+            widget: "list"
+            fields:
+              - { name: "label", label: "Label", widget: "string" }
+              - { name: "url", label: "URL", widget: "string" }
+          - name: "main_nav"
+            label: "Main Navigation"
+            widget: "list"
+            fields:
+              - { name: "label", label: "Label", widget: "string" }
+              - { name: "url", label: "URL", widget: "string" }
+          - name: "footer_links"
+            label: "Footer Links"
+            widget: "list"
+            fields:
+              - { name: "label", label: "Label", widget: "string" }
+              - { name: "url", label: "URL", widget: "string" }
+          - name: "agents"
+            label: "Agent Codes"
+            widget: "object"
+            fields:
+              - { name: "default", label: "Direct Traffic Agent Code", widget: "string", hint: "Agent code for visitors arriving directly (no referrer)" }
+              - { name: "search", label: "SEO Traffic Agent Code", widget: "string", hint: "Agent code for visitors arriving from search engines (Google, Bing, etc.)" }
+
+  - name: "pages"
+    label: "Pages"
+    editor:
+      preview: false
+    files:
+      - name: "homepage"
+        label: "Homepage"
+        file: "content/index.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - { name: "og_title", label: "OG Title", widget: "string", required: false }
+          - { name: "og_description", label: "OG Description", widget: "string", required: false }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Background Image", widget: "image" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "how_it_works"
+            label: "How It Works"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "heading_emphasis", label: "Heading (emphasis)", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "image", label: "Image", widget: "image" }
+                  - { name: "alt", label: "Alt Text", widget: "string" }
+                  - { name: "text", label: "Text", widget: "string" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "items"
+                label: "Benefits List"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "shuttle"
+            label: "Shuttle Service"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "pricing"
+            label: "Pricing Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text (HTML allowed)", widget: "text" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph (HTML allowed)", widget: "text" }
+
+      - name: "parking-zaventem"
+        label: "Parking Zaventem"
+        file: "content/parking-zaventem.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "shuttle"
+            label: "Shuttle Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "how_it_works"
+            label: "How It Works"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "heading_emphasis", label: "Heading (emphasis)", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "image", label: "Image", widget: "image" }
+                  - { name: "alt", label: "Alt Text", widget: "string" }
+                  - { name: "text", label: "Text", widget: "string" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "items"
+                label: "Benefits List"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "location"
+            label: "Location Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+
+      - name: "tarieven"
+        label: "Rates"
+        file: "content/tarieven.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "calculator"
+            label: "Rate Calculator"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "info_heading", label: "Info Heading", widget: "string" }
+              - name: "info_paragraphs"
+                label: "Info Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "benefits_banner"
+            label: "Benefits Banner"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "image", label: "Background Image", widget: "image" }
+              - name: "items"
+                label: "Benefits"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "shuttle_parking"
+            label: "Shuttle Parking"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph (HTML allowed)", widget: "text" }
+              - { name: "cta_heading", label: "CTA Heading", widget: "string" }
+
+      - name: "shuttle-service"
+        label: "Shuttle Service"
+        file: "content/shuttle-service.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "feature_cards"
+            label: "Feature Cards"
+            widget: "list"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "text", label: "Text", widget: "string" }
+              - { name: "icon", label: "Icon", widget: "select", options: ["location", "bus", "clock"] }
+          - name: "how_shuttle_works"
+            label: "How Shuttle Works"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "benefits_banner"
+            label: "Benefits Banner"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "image", label: "Background Image", widget: "image" }
+              - name: "items"
+                label: "Benefits"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph (HTML allowed)", widget: "text" }
+
+      - name: "locaties"
+        label: "Locations"
+        file: "content/locaties.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "map"
+            label: "Map"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "address", label: "Address", widget: "string" }
+              - { name: "embed_url", label: "Google Maps Embed URL", widget: "string" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "items_left"
+                label: "Benefits (left)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+              - name: "items_right"
+                label: "Benefits (right)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+
+      - name: "faq"
+        label: "FAQ"
+        file: "content/faq.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - { name: "heading", label: "Page Heading (h1)", widget: "string" }
+          - name: "categories"
+            label: "FAQ Categories"
+            widget: "list"
+            fields:
+              - { name: "title", label: "Category Name", widget: "string" }
+              - name: "questions"
+                label: "Questions"
+                widget: "list"
+                fields:
+                  - { name: "question", label: "Question", widget: "string" }
+                  - { name: "answer", label: "Answer (HTML allowed)", widget: "text" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "button_text", label: "Button Text", widget: "string" }
+              - { name: "button_url", label: "Button URL", widget: "string" }
+
+      - name: "contact"
+        label: "Contact"
+        file: "content/contact.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - { name: "heading", label: "Page Heading (h1)", widget: "string" }
+          - { name: "intro", label: "Intro Text", widget: "text" }
+          - name: "contact_cards"
+            label: "Contact Cards"
+            widget: "list"
+            fields:
+              - { name: "icon", label: "Icon (HTML entity)", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "text", label: "Text", widget: "string" }
+              - { name: "link_text", label: "Link Text", widget: "string" }
+              - { name: "link_url", label: "Link URL", widget: "string" }
+          - name: "form"
+            label: "Contact Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "subjects"
+                label: "Subjects"
+                widget: "list"
+                field: { name: "subject", label: "Subject", widget: "string" }
+
+      - name: "klantenservice"
+        label: "Customer Service"
+        file: "content/klantenservice.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - { name: "heading", label: "Page Heading (h1)", widget: "string" }
+          - { name: "intro", label: "Intro Text", widget: "text" }
+          - name: "contact_cards"
+            label: "Contact Cards"
+            widget: "list"
+            fields:
+              - { name: "icon", label: "Icon (HTML entity)", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "text", label: "Text", widget: "string" }
+              - { name: "link_text", label: "Link Text", widget: "string" }
+              - { name: "link_url", label: "Link URL", widget: "string" }
+          - name: "service"
+            label: "Service Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "items_left"
+                label: "Benefits (left)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+              - name: "items_right"
+                label: "Benefits (right)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "location"
+            label: "Location Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+
+      - name: "over-greenparking"
+        label: "About GreenParking"
+        file: "content/over-greenparking-zaventem.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "stats"
+            label: "Statistics"
+            widget: "list"
+            fields:
+              - { name: "value", label: "Value", widget: "string" }
+              - { name: "label", label: "Label", widget: "string" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "items_left"
+                label: "Benefits (left)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+              - name: "items_right"
+                label: "Benefits (right)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "location"
+            label: "Location Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph (HTML allowed)", widget: "text" }
+
+      - name: "reserveren"
+        label: "Reservation"
+        file: "content/reserveren.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - { name: "heading", label: "Page Heading (h1)", widget: "string" }
+          - { name: "intro", label: "Intro Text", widget: "text" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - name: "items_left"
+                label: "Benefits (left)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+              - name: "items_right"
+                label: "Benefits (right)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+
+      - name: "lang-parkeren"
+        label: "Long-term Parking"
+        file: "content/lang-parkeren.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "security"
+            label: "Security Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "items"
+                label: "Benefits List"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "location"
+            label: "Location Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "cta_text", label: "CTA Text", widget: "string" }
+              - { name: "cta_link", label: "CTA Link", widget: "string" }
+
+      - name: "kort-parkeren"
+        label: "Short-term Parking"
+        file: "content/kort-parkeren.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "items"
+                label: "Benefits List"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "features"
+            label: "How It Works"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "locations"
+            label: "Locations Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+
+      - name: "goedkoop-lang-parkeren"
+        label: "Budget Long Parking"
+        file: "content/goedkoop-lang-parkeren-zaventem.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "benefits"
+            label: "Benefits Cards"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "text", label: "Text", widget: "text" }
+                  - { name: "icon", label: "Icon", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "parkings"
+            label: "Parkings Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "gemak"
+            label: "Convenience Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "security"
+            label: "Security Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "items"
+                label: "Security Features"
+                widget: "list"
+                field: { name: "item", label: "Feature", widget: "string" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+
+      - name: "parking-zaventem-vergelijken"
+        label: "Compare Parkings"
+        file: "content/parking-zaventem-vergelijken.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "benefits"
+            label: "Benefits Cards"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "icon", label: "Icon", widget: "string" }
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "text", label: "Text", widget: "text" }
+                  - { name: "image", label: "Image", widget: "image" }
+                  - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "long_parking"
+            label: "Long Parking Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "greenparking_long"
+            label: "GreenParking Long Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "phone", label: "Phone", widget: "string" }
+              - { name: "button_text", label: "Button Text", widget: "string" }
+              - { name: "button_url", label: "Button URL", widget: "string" }
+
+      - name: "parking-zaventem-reserveren"
+        label: "Reserve Parking"
+        file: "content/parking-zaventem-reserveren.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - { name: "og_title", label: "OG Title", widget: "string", required: false }
+          - { name: "og_description", label: "OG Description", widget: "string", required: false }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "benefits"
+            label: "Benefits Cards"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "icon", label: "Icon", widget: "string" }
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "text", label: "Text", widget: "text" }
+                  - { name: "image", label: "Image", widget: "image" }
+                  - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "content"
+            label: "Content Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "button_text", label: "Button Text", widget: "string" }
+              - { name: "button_url", label: "Button URL", widget: "string" }
+
+  - name: "fr_globals"
+    label: "French Global Settings"
+    editor:
+      preview: false
+    files:
+      - name: "fr_globals"
+        label: "French Site Settings"
+        file: "content/fr/_globals.yml"
+        fields:
+          - { name: "site_name", label: "Site Name", widget: "string" }
+          - { name: "logo", label: "Logo", widget: "image" }
+          - { name: "phone", label: "Phone Number", widget: "string" }
+          - { name: "phone_link", label: "Phone Number (link)", widget: "string" }
+          - { name: "email", label: "Email Address", widget: "string" }
+          - name: "usp_bar"
+            label: "USP Bar (top)"
+            widget: "list"
+            field: { name: "item", label: "USP", widget: "string" }
+          - name: "bottom_usp"
+            label: "USP Bar (bottom)"
+            widget: "list"
+            field: { name: "item", label: "USP", widget: "string" }
+          - name: "secondary_nav"
+            label: "Secondary Navigation"
+            widget: "list"
+            fields:
+              - { name: "label", label: "Label", widget: "string" }
+              - { name: "url", label: "URL", widget: "string" }
+          - name: "main_nav"
+            label: "Main Navigation"
+            widget: "list"
+            fields:
+              - { name: "label", label: "Label", widget: "string" }
+              - { name: "url", label: "URL", widget: "string" }
+          - name: "footer_links"
+            label: "Footer Links"
+            widget: "list"
+            fields:
+              - { name: "label", label: "Label", widget: "string" }
+              - { name: "url", label: "URL", widget: "string" }
+          - name: "agents"
+            label: "Agent Codes"
+            widget: "object"
+            fields:
+              - { name: "default", label: "Direct Traffic Agent Code", widget: "string" }
+              - { name: "search", label: "SEO Traffic Agent Code", widget: "string" }
+
+  - name: "fr_pages"
+    label: "French Pages"
+    editor:
+      preview: false
+    files:
+      - name: "fr-homepage"
+        label: "FR - Homepage"
+        file: "content/fr/index.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - { name: "og_title", label: "OG Title", widget: "string", required: false }
+          - { name: "og_description", label: "OG Description", widget: "string", required: false }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Background Image", widget: "image" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "how_it_works"
+            label: "How It Works"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "heading_emphasis", label: "Heading (emphasis)", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "image", label: "Image", widget: "image" }
+                  - { name: "alt", label: "Alt Text", widget: "string" }
+                  - { name: "text", label: "Text", widget: "string" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "items"
+                label: "Benefits List"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "shuttle"
+            label: "Shuttle Service"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "pricing"
+            label: "Pricing Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text (HTML allowed)", widget: "text" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph (HTML allowed)", widget: "text" }
+
+      - name: "fr-parking-zaventem"
+        label: "FR - Parking Zaventem"
+        file: "content/fr/parking-zaventem.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "shuttle"
+            label: "Shuttle Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "how_it_works"
+            label: "How It Works"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "heading_emphasis", label: "Heading (emphasis)", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "image", label: "Image", widget: "image" }
+                  - { name: "alt", label: "Alt Text", widget: "string" }
+                  - { name: "text", label: "Text", widget: "string" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "items"
+                label: "Benefits List"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "location"
+            label: "Location Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+
+      - name: "fr-tarifs"
+        label: "FR - Rates"
+        file: "content/fr/tarifs.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "calculator"
+            label: "Rate Calculator"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "info_heading", label: "Info Heading", widget: "string" }
+              - name: "info_paragraphs"
+                label: "Info Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "benefits_banner"
+            label: "Benefits Banner"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "image", label: "Background Image", widget: "image" }
+              - name: "items"
+                label: "Benefits"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "shuttle_parking"
+            label: "Shuttle Parking"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph (HTML allowed)", widget: "text" }
+              - { name: "cta_heading", label: "CTA Heading", widget: "string" }
+
+      - name: "fr-a-propos"
+        label: "FR - About"
+        file: "content/fr/a-propos-de-greenparking-zaventem.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "stats"
+            label: "Statistics"
+            widget: "list"
+            fields:
+              - { name: "value", label: "Value", widget: "string" }
+              - { name: "label", label: "Label", widget: "string" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "items_left"
+                label: "Benefits (left)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+              - name: "items_right"
+                label: "Benefits (right)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "location"
+            label: "Location Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph (HTML allowed)", widget: "text" }
+
+      - name: "fr-faq"
+        label: "FR - FAQ"
+        file: "content/fr/foire-aux-questions.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - { name: "heading", label: "Page Heading (h1)", widget: "string" }
+          - name: "categories"
+            label: "FAQ Categories"
+            widget: "list"
+            fields:
+              - { name: "title", label: "Category Name", widget: "string" }
+              - name: "questions"
+                label: "Questions"
+                widget: "list"
+                fields:
+                  - { name: "question", label: "Question", widget: "string" }
+                  - { name: "answer", label: "Answer (HTML allowed)", widget: "text" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "button_text", label: "Button Text", widget: "string" }
+              - { name: "button_url", label: "Button URL", widget: "string" }
+
+      - name: "fr-lieux"
+        label: "FR - Locations"
+        file: "content/fr/lieux.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "items_left"
+                label: "Benefits (left)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+              - name: "items_right"
+                label: "Benefits (right)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "locations"
+            label: "Parking Locations"
+            widget: "list"
+            fields:
+              - { name: "name", label: "Name", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+
+      - name: "fr-reserver"
+        label: "FR - Reservation"
+        file: "content/fr/reserver-ma-place.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - { name: "heading", label: "Page Heading (h1)", widget: "string" }
+          - { name: "intro", label: "Intro Text", widget: "text" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - name: "items_left"
+                label: "Benefits (left)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+              - name: "items_right"
+                label: "Benefits (right)"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+
+      - name: "fr-parking-economique"
+        label: "FR - Budget Long Parking"
+        file: "content/fr/parking-economique-a-long-terme.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "benefits"
+            label: "Benefits Cards"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "text", label: "Text", widget: "text" }
+                  - { name: "icon", label: "Icon", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "parkings"
+            label: "Parkings Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "gemak"
+            label: "Convenience Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "security"
+            label: "Security Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "items"
+                label: "Security Features"
+                widget: "list"
+                field: { name: "item", label: "Feature", widget: "string" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+
+      - name: "fr-parking-court-terme"
+        label: "FR - Short-term Parking"
+        file: "content/fr/parking-a-court-terme.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "security"
+            label: "Security Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "items"
+                label: "Benefits List"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "features"
+            label: "How It Works"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "locations"
+            label: "Locations Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+
+      - name: "fr-comparaison"
+        label: "FR - Compare Parkings"
+        file: "content/fr/comparaison-des-parkings-zaventem.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "benefits"
+            label: "Benefits Cards"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "icon", label: "Icon", widget: "string" }
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "text", label: "Text", widget: "text" }
+                  - { name: "image", label: "Image", widget: "image" }
+                  - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "long_parking"
+            label: "Long Parking Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "greenparking_long"
+            label: "GreenParking Long Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "phone", label: "Phone", widget: "string" }
+              - { name: "button_text", label: "Button Text", widget: "string" }
+              - { name: "button_url", label: "Button URL", widget: "string" }
+
+      - name: "fr-parking-aeroport"
+        label: "FR - Airport Parking"
+        file: "content/fr/parking-aeroport-de-zaventem.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "shuttle"
+            label: "Shuttle Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "parkings"
+            label: "Parkings Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "heading_emphasis", label: "Heading (emphasis)", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "image", label: "Image", widget: "image" }
+                  - { name: "alt", label: "Alt Text", widget: "string" }
+                  - { name: "text", label: "Text", widget: "string" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "items"
+                label: "Benefits List"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "location"
+            label: "Location Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+
+      - name: "fr-parking-long-terme"
+        label: "FR - Long-term Parking"
+        file: "content/fr/parking-long-terme.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "security"
+            label: "Security Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "benefits"
+            label: "Benefits"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "items"
+                label: "Benefits List"
+                widget: "list"
+                field: { name: "item", label: "Benefit", widget: "string" }
+          - name: "location"
+            label: "Location Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "cta_text", label: "CTA Text", widget: "string", required: false }
+              - { name: "cta_link", label: "CTA Link", widget: "string", required: false }
+
+      - name: "fr-parking-arrivee"
+        label: "FR - Arrival Parking"
+        file: "content/fr/parking-de-arrivee-a-zaventem.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "benefits"
+            label: "Benefits Cards"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "text", label: "Text", widget: "text" }
+                  - { name: "icon", label: "Icon", widget: "string" }
+          - name: "vacation"
+            label: "Vacation Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "ideal"
+            label: "Ideal Parking Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+
+      - name: "fr-reservez-parking"
+        label: "FR - Reserve Parking"
+        file: "content/fr/reservez-une-place-deparking-zaventem.yml"
+        fields:
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "meta_description", label: "Meta Description", widget: "text" }
+          - { name: "og_title", label: "OG Title", widget: "string", required: false }
+          - { name: "og_description", label: "OG Description", widget: "string", required: false }
+          - name: "hero"
+            label: "Hero Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "booking"
+            label: "Booking Form"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+          - name: "benefits"
+            label: "Benefits Cards"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "icon", label: "Icon", widget: "string" }
+                  - { name: "title", label: "Title", widget: "string" }
+                  - { name: "text", label: "Text", widget: "text" }
+                  - { name: "image", label: "Image", widget: "image" }
+                  - { name: "image_alt", label: "Alt Text", widget: "string" }
+          - name: "content"
+            label: "Content Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading (HTML allowed)", widget: "string" }
+              - { name: "image", label: "Image", widget: "image" }
+              - { name: "image_alt", label: "Alt Text", widget: "string" }
+              - name: "paragraphs"
+                label: "Paragraphs"
+                widget: "list"
+                field: { name: "paragraph", label: "Paragraph", widget: "text" }
+          - name: "cta"
+            label: "Call to Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "text", label: "Text", widget: "text" }
+              - { name: "button_text", label: "Button Text", widget: "string" }
+              - { name: "button_url", label: "Button URL", widget: "string" }

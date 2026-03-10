@@ -1,0 +1,40 @@
+title: "Tarieven Zaventem parkeren | GreenParking Zaventem"
+meta_description: "Bekijk de voordelige parkeertarieven van GreenParking Zaventem. Vanaf &euro;3,57 per dag parkeren bij Brussel Zaventem Airport."
+
+usp_bar:
+  - "24/7 bemand"
+  - "Gratis 24/7 shuttlebussen"
+  - "Neem autosleutels zelf mee"
+  - "240.000 reizigers gingen jou voor"
+
+hero:
+  heading: "Tarieven<br><em>Zaventem</em> parkeren"
+  text: "Als je graag voordelige tarieven wil, dan is het een goed idee om bij GreenParking te reserveren. Je kunt al voor &euro;3,57 per dag parkeren bij ons! De tarieven kunnen verschillen in het hoog- of laagseizoen. Ook speelt het mee hoeveel beschikbaarheid er nog is. Het is wijsheid om zo vroeg mogelijk te boeken, vaak zijn de tarieven dan het voordeligst. De actuele parkeertarieven kun je bekijken op onze website. Vul je vertrek- en aankomstdata in en je ziet gelijk wat je moet betalen. Reserveer direct om later teleurstelling te voorkomen."
+  image: "images/illustration.png"
+  image_alt: "Illustratie parkeren bij Zaventem"
+
+calculator:
+  heading: "<em>Bereken</em> het tarief"
+  info_heading: "Wat kost parkeren bij Zaventem?"
+  info_paragraphs:
+    - "Vul je gewenste vertrek- en aankomstdata in om het actuele tarief te berekenen. Je ziet direct wat je betaalt, zonder verborgen kosten. Na het berekenen kun je direct reserveren en zo de beste prijs pakken."
+    - "De tarieven van GreenParking Zaventem zijn tot 20% goedkoper dan parkeren op de luchthaven zelf. Bovendien biedt onze service een gratis 24/7 shuttlebus van en naar de terminal."
+
+benefits_banner:
+  heading: "GreenParking: betrouwbaar en voordelig reizen"
+  image: "images/parking-lot-full.jpg"
+  items:
+    - "Betrouwbaar en voordelig reizen"
+    - "20% goedkoper dan parkeren op Zaventem Airport"
+    - "24/7 gratis shuttlebus van/naar de terminal"
+    - "Geen extra kosten na boeken"
+    - "Beveiligingscamera's op de parkeerplaats"
+    - "Op 15 minuten afstand van Brussel &ndash; Zaventem"
+
+shuttle_parking:
+  heading: "Parkeerterreinen met <em>shuttleservice</em>"
+  image: "images/parking-lot.jpg"
+  paragraphs:
+    - "GreenParking Zaventem heeft een terrein, gelegen aan de Vilvoordelaan."
+    - "<strong>Al 240.000 bezoekers gingen jou voor!</strong>"
+  cta_heading: "Check online beschikbaarheid en reserveer"

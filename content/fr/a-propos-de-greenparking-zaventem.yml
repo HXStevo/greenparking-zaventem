@@ -1,0 +1,38 @@
+title: "Pourquoi se garer chez nous? | GreenParking Zaventem"
+meta_description: "Avec un service de stationnement de haute qualité à 15 minutes de Zaventem, GreenParking vous offre fiabilité et tranquillité d'esprit."
+
+hero:
+  heading: "Parking sur Zaventem : <em>fiable et économique</em>"
+  paragraphs:
+    - "GreenParking propose depuis 2010 des places de parking de qualité à proximité de l'aéroport de Bruxelles Zaventem. La fiabilité et la facilité d'utilisation sont au coeur de tout ce que nous faisons."
+    - "Que vous partiez en vacances ou en voyage d'affaires, chez GreenParking vous pouvez laisser votre voiture en toute tranquillité sur notre terrain sécurisé. Grâce à notre navette gratuite, vous êtes à l'aéroport en environ 15 minutes."
+  image: "images/traveler.jpg"
+  image_alt: "À propos de GreenParking"
+
+stats:
+  - value: "40+"
+    label: "Années d'expérience combinée"
+  - value: "240.000+"
+    label: "Voyageurs satisfaits"
+  - value: "24/7"
+    label: "Accessible et sécurisé"
+  - value: "15 min"
+    label: "Du parking au terminal"
+
+benefits:
+  heading: "Pourquoi choisir GreenParking ?"
+  items_left:
+    - "Stationnement longue durée avantageux pendant votre voyage"
+    - "Navette gratuite vers/depuis l'aéroport"
+    - "Parking situé à proximité de Zaventem"
+  items_right:
+    - "Vidéosurveillance 24h/24 7j/7"
+    - "Aucun frais caché"
+    - "Service client disponible 24h/24 7j/7"
+
+location:
+  heading: "Réglez votre GPS sur <em>Vilvoordelaan</em>"
+  image: "images/parking-lot-full.jpg"
+  paragraphs:
+    - "Après votre réservation, vous recevrez une confirmation par e-mail avec l'adresse exacte du parking. Réglez votre GPS sur la Vilvoordelaan et suivez les indications vers GreenParking."
+    - "Vous avez des questions ? Notre service client est disponible 24h/24 7j/7 au <strong>+32 2 400 39 03</strong>."

@@ -1,0 +1,59 @@
+title: "Goedkoop lang parkeren Zaventem | GreenParking Zaventem"
+meta_description: "Wil je goedkoop lang parkeren op Zaventem? GreenParking Zaventem biedt de oplossing! 24/7 bereikbaar. Beveiligde parking."
+
+hero:
+  heading: "Goedkoop lang parkeren <em>Zaventem</em>"
+  paragraphs:
+    - "Wil je goedkoop lang parkeren op Zaventem? GreenParking Zaventem biedt de oplossing! Onze beveiligde parkeerterreinen liggen op slechts 15 minuten van de luchthaven. De gratis shuttlebus brengt je snel en comfortabel naar de vertrekhal, zodat je zorgeloos op reis kunt."
+    - "Of je nu een week, twee weken of langer op reis gaat, bij GreenParking Zaventem parkeer je altijd voordelig. Reserveer eenvoudig online en profiteer van scherpe tarieven."
+  image: "images/illustration.png"
+  image_alt: "Goedkoop lang parkeren Zaventem"
+
+benefits:
+  heading: "De voordelen van <em>lang parkeren</em>"
+  cards:
+    - title: "Direct naar de vertrekhal"
+      text: "Met onze gratis shuttlebus ben je in ongeveer 15 minuten bij de vertrekhal van Zaventem Airport. Geen gedoe met openbaar vervoer of dure taxi's."
+      icon: "location"
+    - title: "Bespaar extra reistijd"
+      text: "Rij direct naar onze parking en stap in de shuttlebus. Geen lange wandelingen of wachttijden. Wij adviseren om 2,5 uur voor Europese vluchten aanwezig te zijn."
+      icon: "clock"
+    - title: "24/7 bereikbaar"
+      text: "Onze parking en klantenservice zijn 24 uur per dag, 7 dagen per week bereikbaar. Vroege vlucht of late landing? Geen probleem!"
+      icon: "phone"
+
+booking:
+  heading: "Reserveer direct je parkeerplek!"
+
+parkings:
+  heading: "Parkeer op een van onze <em>parkings</em>"
+  image: "images/parking-lot-full.jpg"
+  image_alt: "Parkeerterrein GreenParking Zaventem"
+  paragraphs:
+    - "GreenParking Zaventem beschikt over ruime parkeerterreinen aan de Vilvoordelaan. De terreinen zijn 24/7 beveiligd met camera's en goed verlicht. Je autosleutels neem je gewoon zelf mee, zodat niemand anders bij je auto kan."
+    - "Na je boeking ontvang je een voucher met barcode per e-mail. Bij aankomst scan je de barcode bij de slagboom en parkeer je je auto op een van de ruime plekken. Simpel en snel."
+
+gemak:
+  heading: "Het gemak van <em>GreenParking</em> Zaventem"
+  image: "images/shuttle-bus.jpg"
+  image_alt: "Shuttlebus GreenParking Zaventem"
+  paragraphs:
+    - "De gratis shuttlebus rijdt continu tussen onze parking en de luchthaven. De rit duurt ongeveer 15 minuten. Wij adviseren om 2,5 uur voor Europese vluchten en 3,5 uur voor intercontinentale vluchten aanwezig te zijn op de parking."
+    - "Op de terugweg neem je de shuttlebus vanaf de luchthaven terug naar de parking. Scan je barcode bij de slagboom en rij naar huis. Je auto staat precies waar je hem hebt achtergelaten."
+
+security:
+  heading: "Beveiligd en <em>betrouwbaar</em>"
+  image: "images/security-camera.jpg"
+  image_alt: "Beveiligingscamera parkeerterrein"
+  items:
+    - "24/7 camerabewaking op het gehele terrein"
+    - "Goed verlichte parkeerplaatsen"
+    - "Slagbomen met barcodetoegang"
+    - "Autosleutels neem je zelf mee"
+    - "Al meer dan 240.000 tevreden reizigers"
+
+cta:
+  heading: "GreenParking Zaventem biedt de oplossing om goedkoop lang te parkeren op <em>Zaventem</em>"
+  text: "Check online beschikbaarheid en tarieven en reserveer direct je parkeerplek. Heb je vragen? Neem contact op met onze klantenservice op 02/4003903 of stuur een e-mail naar info@greenparking.com."
+  image: "images/traveler.jpg"
+  image_alt: "Reiziger bij luchthaven"
