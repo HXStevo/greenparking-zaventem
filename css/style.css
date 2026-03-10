@@ -399,6 +399,10 @@ ul, ol {
     margin-bottom: 8px;
 }
 
+.booking-group input[type="date"] {
+    cursor: pointer;
+}
+
 .booking-group input[type="date"],
 .booking-group select {
     width: 100%;

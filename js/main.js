@@ -92,15 +92,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const today = new Date().toISOString().split('T')[0];
         input.setAttribute('min', today);
 
-        // Add calendar icon click handler
-        const wrapper = input.closest('.date-wrapper');
-        if (wrapper) {
-            const icon = wrapper.querySelector('.calendar-icon');
-            if (icon) {
-                icon.addEventListener('click', function() {
-                    input.showPicker && input.showPicker();
-                });
-            }
+        // Open date picker when clicking anywhere on the input
+        input.addEventListener('click', function() {
+            if (input.showPicker) input.showPicker();
+        });
+
+        // When departure date changes, auto-set arrival date to 8 days later
+        if (input.name === 'departure-date') {
+            input.addEventListener('change', function() {
+                var arrivalInput = input.closest('form').querySelector('[name="arrival-date"]');
+                if (arrivalInput && input.value) {
+                    var dep = new Date(input.value);
+                    dep.setDate(dep.getDate() + 8);
+                    arrivalInput.value = dep.toISOString().split('T')[0];
+                    arrivalInput.setAttribute('min', input.value);
+                }
+            });
         }
     });
 
@@ -140,15 +147,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // Redirect to reservation page with dates
-            const params = new URLSearchParams({
-                departure: departDate.value,
-                arrival: arriveDate.value,
-                departTime: form.querySelector('[name="departure-time"]')?.value || '10:00',
-                arriveTime: form.querySelector('[name="arrival-time"]')?.value || '10:00'
+            // Convert YYYY-MM-DD to DD-MM-YYYY
+            function formatDate(dateStr) {
+                var parts = dateStr.split('-');
+                return parts[2] + '-' + parts[1] + '-' + parts[0];
+            }
+
+            var depTime = form.querySelector('[name="departure-time"]')?.value || '10:00';
+            var arrTime = form.querySelector('[name="arrival-time"]')?.value || '10:00';
+
+            var params = new URLSearchParams({
+                'qp-departure-date': formatDate(departDate.value),
+                'qp-departure-time': depTime,
+                'qp-arrival-date': formatDate(arriveDate.value),
+                'qp-arrival-time': arrTime
             });
 
-            window.location.href = 'reserveren.html?' + params.toString();
+            window.location.href = 'https://greenparkingzaventem.be/reserveren/?' + params.toString();
         });
     });
 
