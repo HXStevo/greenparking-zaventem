@@ -1,5 +1,63 @@
 // GreenParking Zaventem - Main JavaScript
 
+// Speculative prefetch for QuickParking booking engine
+// Warms up the connection and pre-caches key resources when user interacts with booking form
+(function() {
+    var prefetched = false;
+
+    function prefetchQuickParking() {
+        if (prefetched) return;
+        prefetched = true;
+
+        // Prefetch the main booking engine page (HTML + critical JS chunks)
+        var mainPage = document.createElement('link');
+        mainPage.rel = 'prefetch';
+        mainPage.href = 'https://book.quickparking.com/nl/static/?selectProduct=cp';
+        mainPage.as = 'document';
+        document.head.appendChild(mainPage);
+
+        // Prefetch key content API calls that the booking engine needs on load
+        var contentApis = [
+            'https://content-api.dock-yard.io/config-content?site=book.quickparking.com.nl',
+            'https://content-api.dock-yard.io/media-for-site?site=book.quickparking.com.nl&type=image'
+        ];
+        contentApis.forEach(function(url) {
+            var link = document.createElement('link');
+            link.rel = 'prefetch';
+            link.href = url;
+            link.as = 'fetch';
+            link.crossOrigin = 'anonymous';
+            document.head.appendChild(link);
+        });
+
+        // Prefetch the QuickParking logo and font (always needed)
+        var staticAssets = [
+            'https://d17s4kc6349e5h.cloudfront.net/quickparking/assets/images/logo_quickparking.svg',
+            'https://d17s4kc6349e5h.cloudfront.net/quickparking/assets/fonts/Lato-Regular.woff2'
+        ];
+        staticAssets.forEach(function(url) {
+            var link = document.createElement('link');
+            link.rel = 'prefetch';
+            link.href = url;
+            document.head.appendChild(link);
+        });
+    }
+
+    // Trigger prefetch when user interacts with any booking form element
+    document.addEventListener('focus', function(e) {
+        if (e.target.closest && e.target.closest('.booking-form')) {
+            prefetchQuickParking();
+        }
+    }, true);
+
+    // Also trigger on first click on the booking form area
+    document.addEventListener('click', function(e) {
+        if (e.target.closest && e.target.closest('.booking-form, .booking-section, .reservation-form')) {
+            prefetchQuickParking();
+        }
+    }, true);
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
     // Orion Tracking initialization
     if (window.orion) {
@@ -129,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Booking form submission
+    // Booking form submission - redirect to QuickParking booking engine
     const bookingForms = document.querySelectorAll('.booking-form');
     bookingForms.forEach(function(form) {
         form.addEventListener('submit', function(e) {
@@ -147,28 +205,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // Convert YYYY-MM-DD to DD-MM-YYYY
-            function formatDate(dateStr) {
-                var parts = dateStr.split('-');
-                return parts[2] + '-' + parts[1] + '-' + parts[0];
-            }
-
             var depTime = form.querySelector('[name="departure-time"]')?.value || '10:00';
             var arrTime = form.querySelector('[name="arrival-time"]')?.value || '10:00';
 
-            var params = new URLSearchParams({
-                'qp-departure-date': formatDate(departDate.value),
-                'qp-departure-time': depTime,
-                'qp-arrival-date': formatDate(arriveDate.value),
-                'qp-arrival-time': arrTime
-            });
+            // Build QuickParking booking engine URL
+            // out = outbound/departure date, in = inbound/return date
+            var agent = (window.GreenParkingAgent && window.GreenParkingAgent.current) || 'QDIEN';
+            var hashParams = [
+                'agent=' + encodeURIComponent(agent),
+                'lang=nl',
+                'adults=2',
+                'depart=AMS',
+                'in=' + arriveDate.value,
+                'out=' + departDate.value,
+                'park_from=' + encodeURIComponent(depTime),
+                'park_to=' + encodeURIComponent(arrTime)
+            ].join('&');
 
-            // Append agent code if available
-            if (window.GreenParkingAgent && window.GreenParkingAgent.current) {
-                params.set('agent', window.GreenParkingAgent.current);
-            }
-
-            window.location.href = 'https://greenparkingzaventem.be/reserveren/?' + params.toString();
+            window.location.href = 'https://book.quickparking.com/nl/static/?selectProduct=cp#/carpark?' + hashParams;
         });
     });
 
