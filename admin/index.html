@@ -7,44 +7,49 @@
 </head>
 <body>
     <script>
-    // OAuth relay for Decap CMS - handles cross-origin popup auth flow
-    // When window.opener is lost during GitHub OAuth redirects, this script
-    // receives the auth token via BroadcastChannel/localStorage and replays
-    // the full two-phase handshake that Decap CMS expects.
+    // OAuth relay for Decap CMS on Vercel
+    // After GitHub OAuth, window.opener is lost due to cross-origin redirects.
+    // The callback page stores the token in localStorage/BroadcastChannel.
+    // This script picks it up and writes it directly into Decap CMS's internal
+    // auth state (netlify-cms-user), then reloads so CMS starts authenticated.
     (function() {
-        var relayed = false;
+        var handled = false;
 
-        function relayAuthToDecap(authMessage) {
-            if (relayed) return;
-            if (typeof authMessage !== 'string' || authMessage.indexOf('authorization:') !== 0) return;
-            relayed = true;
+        function handleAuth(authMessage) {
+            if (handled) return;
+            if (typeof authMessage !== 'string') return;
+            if (authMessage.indexOf('authorization:github:success:') !== 0) return;
+            handled = true;
 
-            // Extract provider from message format "authorization:provider:status:data"
-            var provider = authMessage.split(':')[1];
+            try {
+                // Extract JSON payload from "authorization:github:success:{...}"
+                var jsonStr = authMessage.substring('authorization:github:success:'.length);
+                var data = JSON.parse(jsonStr);
 
-            // Phase 1: Send the handshake message that Decap CMS expects
-            // CMS listens for "authorizing:<provider>" and only then registers
-            // the actual authorization callback listener
-            window.postMessage('authorizing:' + provider, '*');
-
-            // Phase 2: Send the actual authorization result after a short delay
-            // to give CMS time to process the handshake and register its callback
-            setTimeout(function() {
-                window.postMessage(authMessage, '*');
-            }, 200);
+                if (data.token) {
+                    // Write directly into Decap CMS's internal auth storage
+                    localStorage.setItem('netlify-cms-user', JSON.stringify({
+                        token: data.token,
+                        backendName: 'github'
+                    }));
+                    // Clean up relay storage
+                    localStorage.removeItem('decap-cms-auth');
+                    // Reload so CMS picks up the stored auth
+                    window.location.reload();
+                }
+            } catch(e) {}
         }
 
-        // Method 1: BroadcastChannel (fastest cross-window communication)
+        // Method 1: BroadcastChannel
         if (typeof BroadcastChannel !== 'undefined') {
             var channel = new BroadcastChannel('decap-cms-auth');
-            channel.onmessage = function(e) { relayAuthToDecap(e.data); };
+            channel.onmessage = function(e) { handleAuth(e.data); };
         }
 
-        // Method 2: localStorage change event (fires when other windows modify storage)
+        // Method 2: localStorage change event
         window.addEventListener('storage', function(e) {
             if (e.key === 'decap-cms-auth' && e.newValue) {
-                relayAuthToDecap(e.newValue);
-                try { localStorage.removeItem('decap-cms-auth'); } catch(err) {}
+                handleAuth(e.newValue);
             }
         });
 
@@ -54,8 +59,7 @@
                 var data = localStorage.getItem('decap-cms-auth');
                 if (data && data.indexOf('authorization:') === 0) {
                     clearInterval(pollInterval);
-                    localStorage.removeItem('decap-cms-auth');
-                    relayAuthToDecap(data);
+                    handleAuth(data);
                 }
             } catch(e) {}
         }, 500);
