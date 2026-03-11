@@ -50,13 +50,29 @@ module.exports = (req, res) => {
 <body>
 <script>
 (function() {
-    function sendMessage(message) {
-        if (window.opener) {
-            window.opener.postMessage(message, '*');
-            window.close();
-        }
+    var message = '${content}';
+
+    // Method 1: window.opener.postMessage (standard popup flow)
+    if (window.opener) {
+        window.opener.postMessage(message, '*');
+        window.close();
+        return;
     }
-    sendMessage('${content}');
+
+    // Method 2: BroadcastChannel (works when window.opener is lost due to cross-origin redirects)
+    if (typeof BroadcastChannel !== 'undefined') {
+        var channel = new BroadcastChannel('decap-cms-auth');
+        channel.postMessage(message);
+        channel.close();
+    }
+
+    // Method 3: localStorage event (fallback for older browsers)
+    try {
+        localStorage.setItem('decap-cms-auth', message);
+    } catch(e) {}
+
+    // Close popup after a brief delay
+    setTimeout(function() { window.close(); }, 300);
 })();
 </script>
 </body>

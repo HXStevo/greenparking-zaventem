@@ -6,6 +6,33 @@
     <title>GreenParking Zaventem - Content Manager</title>
 </head>
 <body>
+    <script>
+    // Listen for OAuth callback messages via BroadcastChannel and localStorage
+    // This handles the case where window.opener is lost during cross-origin GitHub redirects
+    (function() {
+        function handleAuthMessage(message) {
+            if (typeof message === 'string' && message.startsWith('authorization:')) {
+                window.postMessage(message, '*');
+            }
+        }
+
+        // BroadcastChannel listener
+        if (typeof BroadcastChannel !== 'undefined') {
+            var channel = new BroadcastChannel('decap-cms-auth');
+            channel.onmessage = function(e) {
+                handleAuthMessage(e.data);
+            };
+        }
+
+        // localStorage listener
+        window.addEventListener('storage', function(e) {
+            if (e.key === 'decap-cms-auth' && e.newValue) {
+                handleAuthMessage(e.newValue);
+                try { localStorage.removeItem('decap-cms-auth'); } catch(err) {}
+            }
+        });
+    })();
+    </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
