@@ -45,12 +45,16 @@ module.exports = (req, res) => {
                     ? `authorization:${provider}:success:${JSON.stringify({ token, provider })}`
                     : `authorization:${provider}:error:${JSON.stringify(parsed)}`;
 
+                // Escape for safe embedding in single-quoted JS string
+                const escaped = content.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+
                 res.status(200).send(`<!DOCTYPE html>
 <html>
 <body>
+<p>Authentication successful. This window will close automatically...</p>
 <script>
 (function() {
-    var message = '${content}';
+    var message = '${escaped}';
 
     // Method 1: window.opener.postMessage (standard popup flow)
     if (window.opener) {
@@ -59,20 +63,22 @@ module.exports = (req, res) => {
         return;
     }
 
-    // Method 2: BroadcastChannel (works when window.opener is lost due to cross-origin redirects)
+    // window.opener is null (lost during cross-origin GitHub redirect)
+    // Use BroadcastChannel and localStorage to relay the token to the admin page
+
+    // Method 2: BroadcastChannel
     if (typeof BroadcastChannel !== 'undefined') {
         var channel = new BroadcastChannel('decap-cms-auth');
         channel.postMessage(message);
-        channel.close();
     }
 
-    // Method 3: localStorage event (fallback for older browsers)
+    // Method 3: localStorage (triggers storage event in admin page)
     try {
         localStorage.setItem('decap-cms-auth', message);
     } catch(e) {}
 
-    // Close popup after a brief delay
-    setTimeout(function() { window.close(); }, 300);
+    // Close popup after delay to ensure messages are delivered
+    setTimeout(function() { window.close(); }, 3000);
 })();
 </script>
 </body>

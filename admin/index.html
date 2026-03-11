@@ -7,30 +7,59 @@
 </head>
 <body>
     <script>
-    // Listen for OAuth callback messages via BroadcastChannel and localStorage
-    // This handles the case where window.opener is lost during cross-origin GitHub redirects
+    // OAuth relay for Decap CMS - handles cross-origin popup auth flow
+    // When window.opener is lost during GitHub OAuth redirects, this script
+    // receives the auth token via BroadcastChannel/localStorage and replays
+    // the full two-phase handshake that Decap CMS expects.
     (function() {
-        function handleAuthMessage(message) {
-            if (typeof message === 'string' && message.startsWith('authorization:')) {
-                window.postMessage(message, '*');
-            }
+        var relayed = false;
+
+        function relayAuthToDecap(authMessage) {
+            if (relayed) return;
+            if (typeof authMessage !== 'string' || authMessage.indexOf('authorization:') !== 0) return;
+            relayed = true;
+
+            // Extract provider from message format "authorization:provider:status:data"
+            var provider = authMessage.split(':')[1];
+
+            // Phase 1: Send the handshake message that Decap CMS expects
+            // CMS listens for "authorizing:<provider>" and only then registers
+            // the actual authorization callback listener
+            window.postMessage('authorizing:' + provider, '*');
+
+            // Phase 2: Send the actual authorization result after a short delay
+            // to give CMS time to process the handshake and register its callback
+            setTimeout(function() {
+                window.postMessage(authMessage, '*');
+            }, 200);
         }
 
-        // BroadcastChannel listener
+        // Method 1: BroadcastChannel (fastest cross-window communication)
         if (typeof BroadcastChannel !== 'undefined') {
             var channel = new BroadcastChannel('decap-cms-auth');
-            channel.onmessage = function(e) {
-                handleAuthMessage(e.data);
-            };
+            channel.onmessage = function(e) { relayAuthToDecap(e.data); };
         }
 
-        // localStorage listener
+        // Method 2: localStorage change event (fires when other windows modify storage)
         window.addEventListener('storage', function(e) {
             if (e.key === 'decap-cms-auth' && e.newValue) {
-                handleAuthMessage(e.newValue);
+                relayAuthToDecap(e.newValue);
                 try { localStorage.removeItem('decap-cms-auth'); } catch(err) {}
             }
         });
+
+        // Method 3: Poll localStorage as backup
+        var pollInterval = setInterval(function() {
+            try {
+                var data = localStorage.getItem('decap-cms-auth');
+                if (data && data.indexOf('authorization:') === 0) {
+                    clearInterval(pollInterval);
+                    localStorage.removeItem('decap-cms-auth');
+                    relayAuthToDecap(data);
+                }
+            } catch(e) {}
+        }, 500);
+        setTimeout(function() { clearInterval(pollInterval); }, 120000);
     })();
     </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
