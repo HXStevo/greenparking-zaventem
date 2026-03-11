@@ -48,36 +48,53 @@ module.exports = (req, res) => {
                 // Escape for safe embedding in single-quoted JS string
                 const escaped = content.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
 
+                const tokenEscaped = (token || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+                const errorInfo = !token ? JSON.stringify(parsed).replace(/'/g, "\\'") : '';
+
                 res.status(200).send(`<!DOCTYPE html>
 <html>
 <body>
-<p>Authentication successful. This window will close automatically...</p>
+<p id="status">${token ? 'Authentication successful...' : 'Authentication failed.'}</p>
+${!token ? '<p>Error: ' + (parsed.error_description || parsed.error || 'Unknown error') + '</p>' : ''}
 <script>
 (function() {
-    var message = '${escaped}';
+    var token = '${tokenEscaped}';
+    if (!token) return;
 
-    // Method 1: window.opener.postMessage (standard popup flow)
+    // Store token directly in Decap CMS auth key
+    try {
+        localStorage.setItem('netlify-cms-user', JSON.stringify({
+            token: token,
+            backendName: 'github'
+        }));
+    } catch(e) {
+        document.getElementById('status').textContent = 'Failed to store token: ' + e.message;
+        return;
+    }
+
+    // Method 1: Try window.opener (standard popup flow)
     if (window.opener) {
-        window.opener.postMessage(message, '*');
+        try {
+            window.opener.location.reload();
+        } catch(e) {}
         window.close();
         return;
     }
 
-    // window.opener is null (lost during cross-origin GitHub redirect)
-    // Use BroadcastChannel and localStorage to relay the token to the admin page
-
-    // Method 2: BroadcastChannel
+    // Method 2: Signal admin page to reload via BroadcastChannel
     if (typeof BroadcastChannel !== 'undefined') {
         var channel = new BroadcastChannel('decap-cms-auth');
-        channel.postMessage(message);
+        channel.postMessage('reload');
     }
 
-    // Method 3: localStorage (triggers storage event in admin page)
+    // Method 3: Signal via localStorage (triggers storage event)
     try {
-        localStorage.setItem('decap-cms-auth', message);
+        localStorage.setItem('decap-cms-auth', 'reload');
     } catch(e) {}
 
-    // Close popup after delay to ensure messages are delivered
+    document.getElementById('status').textContent = 'Logged in! You can close this window and refresh the admin page.';
+
+    // Auto-close after delay
     setTimeout(function() { window.close(); }, 3000);
 })();
 </script>

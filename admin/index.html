@@ -7,63 +7,39 @@
 </head>
 <body>
     <script>
-    // OAuth relay for Decap CMS on Vercel
-    // After GitHub OAuth, window.opener is lost due to cross-origin redirects.
-    // The callback page stores the token in localStorage/BroadcastChannel.
-    // This script picks it up and writes it directly into Decap CMS's internal
-    // auth state (netlify-cms-user), then reloads so CMS starts authenticated.
+    // OAuth reload listener for Decap CMS on Vercel.
+    // The callback popup stores the token directly in netlify-cms-user
+    // and signals this page to reload via BroadcastChannel or localStorage.
     (function() {
-        var handled = false;
-
-        function handleAuth(authMessage) {
-            if (handled) return;
-            if (typeof authMessage !== 'string') return;
-            if (authMessage.indexOf('authorization:github:success:') !== 0) return;
-            handled = true;
-
-            try {
-                // Extract JSON payload from "authorization:github:success:{...}"
-                var jsonStr = authMessage.substring('authorization:github:success:'.length);
-                var data = JSON.parse(jsonStr);
-
-                if (data.token) {
-                    // Write directly into Decap CMS's internal auth storage
-                    localStorage.setItem('netlify-cms-user', JSON.stringify({
-                        token: data.token,
-                        backendName: 'github'
-                    }));
-                    // Clean up relay storage
-                    localStorage.removeItem('decap-cms-auth');
-                    // Reload so CMS picks up the stored auth
-                    window.location.reload();
-                }
-            } catch(e) {}
+        var reloading = false;
+        function doReload() {
+            if (reloading) return;
+            reloading = true;
+            localStorage.removeItem('decap-cms-auth');
+            window.location.reload();
         }
 
-        // Method 1: BroadcastChannel
+        // Listen for reload signal via BroadcastChannel
         if (typeof BroadcastChannel !== 'undefined') {
             var channel = new BroadcastChannel('decap-cms-auth');
-            channel.onmessage = function(e) { handleAuth(e.data); };
+            channel.onmessage = function() { doReload(); };
         }
 
-        // Method 2: localStorage change event
+        // Listen for reload signal via localStorage storage event
         window.addEventListener('storage', function(e) {
-            if (e.key === 'decap-cms-auth' && e.newValue) {
-                handleAuth(e.newValue);
-            }
+            if (e.key === 'decap-cms-auth' && e.newValue) { doReload(); }
         });
 
-        // Method 3: Poll localStorage as backup
-        var pollInterval = setInterval(function() {
+        // Poll localStorage as backup
+        var poll = setInterval(function() {
             try {
-                var data = localStorage.getItem('decap-cms-auth');
-                if (data && data.indexOf('authorization:') === 0) {
-                    clearInterval(pollInterval);
-                    handleAuth(data);
+                if (localStorage.getItem('decap-cms-auth')) {
+                    clearInterval(poll);
+                    doReload();
                 }
             } catch(e) {}
         }, 500);
-        setTimeout(function() { clearInterval(pollInterval); }, 120000);
+        setTimeout(function() { clearInterval(poll); }, 120000);
     })();
     </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
