@@ -38,11 +38,11 @@ main_nav:
 
 footer_links:
   - label: "Algemene voorwaarden"
-    url: "#"
+    url: "https://greenparkingzaventem.be/algemene-voorwaarden/"
   - label: "Privacy"
-    url: "#"
+    url: "https://greenparkingzaventem.be/privacy-verklaring/"
   - label: "Webdesign"
-    url: "#"
+    url: "https://www.sixtyseven.com/"
 
 agents:
   default: "WT894"
