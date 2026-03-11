@@ -36,6 +36,8 @@ const pages = [
     { content: 'parking-zaventem-vergelijken.yml', template: 'parking-zaventem-vergelijken.njk', output: 'parking-zaventem-vergelijken.html' },
     { content: 'lang-parkeren.yml', template: 'lang-parkeren.njk', output: 'lang-parkeren.html' },
     { content: 'kort-parkeren.yml', template: 'kort-parkeren.njk', output: 'kort-parkeren.html' },
+    { content: 'algemene-voorwaarden.yml', template: 'legal-page.njk', output: 'algemene-voorwaarden.html' },
+    { content: 'privacy-verklaring.yml', template: 'legal-page.njk', output: 'privacy-verklaring.html' },
 ];
 
 // French pages (use fr/ globals and output to fr/ subdirectory)

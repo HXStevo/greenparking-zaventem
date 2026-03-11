@@ -1,0 +1,16 @@
+{% extends "_layout.njk" %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <div class="legal-content">
+                <h1>{{ page.heading }}</h1>
+                <p class="legal-intro">{{ page.intro | safe }}</p>
+                {% for section in page.sections %}
+                <h2>{{ section.heading }}</h2>
+                {{ section.content | safe }}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

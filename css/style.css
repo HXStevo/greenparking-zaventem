@@ -1213,6 +1213,51 @@ h3 {
 }
 
 /* ============================================
+   Legal Pages
+   ============================================ */
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legal-content h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.legal-intro {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.legal-content h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.legal-content p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.legal-content ul {
+    margin: 10px 0 15px 20px;
+    padding-left: 0;
+}
+
+.legal-content ul li {
+    margin-bottom: 6px;
+    line-height: 1.6;
+}
+
+/* ============================================
    Responsive - Mobile
    ============================================ */
 @media (max-width: 768px) {

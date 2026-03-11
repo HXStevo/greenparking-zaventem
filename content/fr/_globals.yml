@@ -38,9 +38,9 @@ main_nav:
 
 footer_links:
   - label: "Conditions Générales"
-    url: "https://greenparkingzaventem.be/algemene-voorwaarden/"
+    url: "algemene-voorwaarden.html"
   - label: "Privacy"
-    url: "https://greenparkingzaventem.be/privacy-verklaring/"
+    url: "privacy-verklaring.html"
   - label: "Webdesign"
     url: "https://www.sixtyseven.com/"
 
